@@ -1,4 +1,4 @@
-[Go to the Cloud Test Drive Overview](/README.md)
+[Autonomous Hands on LAB](/README.md)
 
 ![images](/images/step1/0.registration.PNG)
 
@@ -8,17 +8,13 @@
 
 This hands-on lab will allow you to explore Autonomous Database
 
-- **Prerequisites:** [Preparation for the workshop](prereq.md)
-- **Lab 100:** [First steps with ATP](step1.md)
-- **Lab 200:** [Add Spatial to your APEX app](L200.md)
-- **Lab 300:** [Add Machine Learning to your APEX app](L300.md)
-- **Lab 400:** [Add Security to your APEX app](L400.md)
-- **Lab 500:** [Add Analytics to your APEX app](L500.md)
-
-
-
-
+- **Prerequisites:** [Preparation for the workshop](step0.md)
+- **STEP 1:** [Create your ATP](step1.md)
+- **STEP 2:** [Add Spatial to your APEX app](step0.md)
+- **STEP 3:** [Add Machine Learning to your APEX app](step0.md)
+- **STEP 4:** [Add Security to your APEX app](step0.md)
+- **STEP 5:** [Add Analytics to your APEX app](step0.md)
 
 ---
 
-[Go to the Cloud Test Drive Overview](../readme.md)
+[Autonomous Hands on LAB](/README.md)
