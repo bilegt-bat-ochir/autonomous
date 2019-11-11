@@ -1,9 +1,9 @@
 [Go to the Cloud Test Drive Overview](/README.md)
 
-![](../images/1. main window.png)
+![images](/images/step1/0.registration.PNG)
 
 # Autonomous Database Hands on labs #
-
+**mylab**
 ## Lab Introduction
 
 This hands-on lab will allow you to explore Autonomous Database
