@@ -1,13 +1,12 @@
-[Go to the Cloud Test Drive Overview](../../readme.md)
+[Go to the Cloud Test Drive Overview](../readme.md)
 
 ![](../../common/images/customer.logo2.png)
 
 # Autonomous Database Hands on labs #
 
-adsad # a ds #
 ## Lab Introduction
 
-This hands-on lab will allow you to develop APEX applications using an Autonomous Transaction Processing Database
+This hands-on lab will allow you to explore Autonomous Database
 
 - **Prerequisites:** [Preparation for the workshop](prereq.md)
 - **Lab 100:** [First steps with ATP](L100.md)
@@ -22,4 +21,4 @@ This hands-on lab will allow you to develop APEX applications using an Autonomou
 
 ---
 
-[Go to the Cloud Test Drive Overview](../../readme.md)
+[Go to the Cloud Test Drive Overview](../readme.md)
