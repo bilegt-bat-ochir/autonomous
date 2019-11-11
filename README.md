@@ -1,4 +1,4 @@
-[Go to the Cloud Test Drive Overview](/readme.md)
+[Go to the Cloud Test Drive Overview](/README.md)
 
 ![](../images/1. main window.png)
 
