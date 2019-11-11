@@ -1,6 +1,6 @@
 [Go to the Cloud Test Drive Overview](../readme.md)
 
-![](../1 main window.png)
+![](/images/1 main window.png)
 
 # Autonomous Database Hands on labs #
 
