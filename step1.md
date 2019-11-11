@@ -65,4 +65,4 @@ The Performance Hub is a great tool to monitor our ATP status and activity. It i
 
 ![](./images/general/juan.jpg)
 
-[juan.cabrera@oracle.com](mailto:juan.cabrera@oracle.com)
+[bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
