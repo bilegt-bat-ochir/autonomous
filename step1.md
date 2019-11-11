@@ -1,11 +1,11 @@
 
 ![](images/general/workshop_logo.png)
 
-# Lab 100: First steps with ATP
+# STEP 1: Create your Autonomous database
 
 ## Objectives
-- Configure auto-scaling in our ATP instance 
-- Access the Performance Hub and learn how to monitor your ATP running your APEX applications
+- Create your first ATP instance 
+- Scale up and down CPU/storage
 - Prepare the APEX workspace
 
 # Steps
