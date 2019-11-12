@@ -40,9 +40,26 @@ The Performance Hub is a great tool to monitor our ATP status and activity. It i
 - In the upper part we will see the consumption of resources and waits of our sessions along time. In the lower part, we will be able to check the ASH (Active Session History) analysis, access the SQL Monitoring to analyze individual queries or even submit a session kill command.
 	![](./images/step3/2.performancehub.PNG)
 
+## Move your resource to different compartment
+
+- - **this is additional step**
+To move resources between compartments, resource users must have sufficient access permissions on the compartment that the resource is being moved to, as well as the current compartment
+
+- In the list of Autonomous Databases, click on the display name of the database you wish to move, then click on Actions
+
+	![](./images/step3/3.moveresource.PNG)
+
+- Click move resource and choose the new compartment of your ATP.
+
+	![](./images/step3/3.moveresource-cont1.PNG)
+
+- Here is the short video of steps provisioning my ATP instance:
+
+  ![](./images/step3/1.scaleup.gif)
+
+
 You may continue to next step 
 - [APEX on Autonomous Database](step4.md)
-
 
 ## Follow-up questions
 
