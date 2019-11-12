@@ -74,13 +74,13 @@
 
   ![](./images/step2/1.createATP-cont3_4.PNG)
 
-- Here is the short video of steps provisioning my ATP instance:
+## Here is the short summary video of provisioning ATP instance:
 
   ![](./images/step2/1.createATP.gif)
 
 Now you have two autonomous databases, **Autonomous Transaction Processing** and **ALWAYS FREE ATP**.
 
-You may continue to next step 
+## You may continue to next step 
 - [Explore Autonomous database console](step3.md)
 
 
