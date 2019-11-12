@@ -6,6 +6,7 @@
 
 - Scale up/down your ATP
 - Configure auto-scaling
+- Accessing to performance hub
 
 ## Scale up and down your ATP
 
