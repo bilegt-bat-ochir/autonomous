@@ -94,7 +94,7 @@ Go to Actions, and then click Stop (or Start). When you stop your Autonomous Dat
 	
 - Check and confirm, status is now **TERMINATED**.
 	
-	![](./images/step3/4.manage-cont5.PNG)
+	![](./images/step3/4.manage-cont6.PNG)
 	
 ## You may continue to next step 
 - [APEX on Autonomous Database](step4.md)
