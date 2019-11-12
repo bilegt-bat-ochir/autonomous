@@ -3,9 +3,14 @@
 
 # Step 4: Create your first application in APEX
 ## Objectives
-- Configure your APEX workspace
+- Explore the bundled features of Autonomous database.
+- Become familiar with APEX.
+- Create a machine learning model to identify customers that are likely to buy a certain product.
 
-## Configure the APEX workspace
+## Import application to your existing APEX workspace
+
+Our starting point is an existing CRM application used by a fictional company. This contains basic information about our company's customers. The application is used by the sales/service employees of our company to look up details whenever a customer calls them.
+First download the application that we will install. You can find it [here](./files/f100.sql). Download and save it as f100.sql. 
 
 - Go to your ATP database and open the Service Console.
 
@@ -15,25 +20,11 @@
   
   ![](./images/step4/1.apex-cont1.PNG)
   
--  You will see the login page fof APEX Administration Services. Use the ADMIN password that you entered when you provision ATP.
-
-  ![](./images/step4/1.apex-cont2.PNG)
-
-- Click on **Create workspace** to configure your APEX playground.
-  
-  ![](./images/step4/1.apex-cont3.PNG)
-
-- You can create a workspace and a database user at sametime. Let's create new user "WORKSHOPATP" and "WORKSHOPATP" workspace will be created accordingly.     *Keep a note of the password as you will need it later.*
-
-  ![](./images/step4/1.apex-cont4.PNG)
-  
-- New workspace and database user is created. Now click on hyperlink "WORKSHOPATP".
-
-  ![](./images/step4/1.apex-cont5.PNG)
-  
 - Provide your password when you created "WORKSHOPATP" user in previous step.
 
   ![](./images/step4/1.apex-cont6.PNG)
+  
+  
 
 ## Here is the short summary video of above steps:
 
