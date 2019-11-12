@@ -1,3 +1,5 @@
+- [Go back to main](/README.md)
+- [Go back to previous step](/step1.md)
 
 ![](images/general/workshop_logo.png)
 
