@@ -29,28 +29,49 @@
 
   ![](./images/step2/0.login_cont1.png)
 
-- You should already have an ATP instance named "WORKSHOP". Click it.
-  ![](./images/step2/1.CreateATP.PNG)
-  ![](./images/step2/1.CreateATP_cont1.PNG)
+- Click on **Create Autonomous Database**
+
+  ![](./images/step2/1.createATP.PNG)
   
-  ![](./images/step2/1.CreateATP_cont2.PNG)
+- Enter **Display name** and **Database name** to  the database, in this case "Warrior".
+
+  ![](./images/step2/1.createATP-cont1.PNG)
   
-  ![](./images/step2/1.CreateATP_cont3.PNG)
+- Please choose the **Transaction Processing**, which is optimized the database for daily transactional processing, just like OLTP database.
+- For your demo purpose, please also make sure you choose **"Serverless"**.
+
+  ![](./images/step2/1.createATP-cont2.PNG)
   
-  ![](./images/step2/1.CreateATP_cont4.PNG)
+- Since this is our first time experience with Autonomous database, let's choose **"ALWAYS FREE"** by click in on Radio button.
   
-  ![](./images/step2/1.CreateATP_cont5.PNG)
+  ![](./images/step2/1.createATP-cont3.PNG)
   
-  ![](./images/step2/1.CreateATP_cont6.PNG)
+- For experienced users, who have been using Oracle Database 18c for some period, you can choose to enable **19c** in your Autonomous database, but we will skip and don't choose for this lab.
+
+  ![](./images/step2/1.createATP-cont4.PNG)
   
+- Provide your database credential for **"ADMIN"** user schema.
+
+  ![](./images/step2/1.createATP-cont5.PNG)
+
+- **License Included** option will automatically enabled, because we have chosen **ALWAYS FREE** for this lab.
+
+  ![](./images/step2/1.createATP-cont6.PNG)
+  
+- Provisioning your autonomous database will take usually 3-5 minutes, after that you will be able to experience the power of autonomous. Here is the short video of steps:
+
+![](./images/step2/1.createATP.gif)
+	
 ## Configuring auto-scaling
 Auto-scaling is a very powerful feature that lets our application handle peaks of traffic, while keeping costs under control at the same time. We will define a minimum number of OCPUs that our ATP will provision and the database will automatically scale up to three times that number, in case the demand arrives.
 
 - Click on Scale Up/Down.
+
 	![](./images/lab100/Scale.png)
 
 - Activate the AUTO SCALING checkbox: once you turn this on, the database will use up to three times the number of original cores to 
   execute its workloads. 
+  
 	![](./images/lab100/Autoscaling.png)
 
 ## Accesing the Performance Hub
