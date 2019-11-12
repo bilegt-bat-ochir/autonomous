@@ -86,6 +86,6 @@ Now you have two autonomous databases, **Autonomous Transaction Processing** and
 
 ## Follow-up questions
 
-![](./images/bilegt.jpg)
+![](./images/bilegt.JPG)
 
 [bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
