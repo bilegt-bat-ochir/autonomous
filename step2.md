@@ -4,11 +4,10 @@
 # STEP 2: Create your Autonomous database
 
 ## Objectives
-- Create your first ATP instance 
-- Scale up and down CPU/storage
-- Prepare the APEX workspace
+- Create your first ATP instance
+- Create your ALWAYS FREE autonomous database instance
 
-# Steps
+## Create your first ATP instance
 - Open www.oracle.com and click on the icon in red square.
 
 ![](./images/step2/0.signin.png)
@@ -42,7 +41,7 @@
 
   ![](./images/step2/1.createATP-cont2.PNG)
   
-- Since this is our first time experience with Autonomous database, let's choose **"ALWAYS FREE"** by click in on Radio button.
+- Choose OCPU count **1** and storage size **1TB** for this lab.
   
   ![](./images/step2/1.createATP-cont3.PNG)
   
@@ -54,15 +53,26 @@
 
   ![](./images/step2/1.createATP-cont5.PNG)
 
-- **License Included** option will automatically enabled, because we have chosen **ALWAYS FREE** for this lab.
+- Choose **BYOL** option
 
   ![](./images/step2/1.createATP-cont6.PNG)
   
-- Provisioning your autonomous database will take usually 3-5 minutes, after that you will be able to experience the power of autonomous. Here is the short video of steps:
+- Provisioning your autonomous database will take usually 3-5 minutes, after that you will be able to experience the power of autonomous. 
+## Create your **ALWAYS FREE** autonomous database instance
 
-![](./images/step2/1.createATP.gif)
+- You need to follow same steps as previous, however, in order to have your **ALWAYS FREE** autonomous database, by clicking on radio button as shown in below 
 
-Now you have your **ALWAYS FREE** autonomous transaction processing database.
+  ![](./images/step2/1.createATP-cont3.PNG)
+
+- **License Included** option will automatically enabled when you choose to enable **ALWAYS FREE**.
+
+  ![](./images/step2/1.createATP-cont6.PNG)
+
+- Here is the short video of steps provisioning my ATP instance:
+
+  ![](./images/step2/1.createATP.gif)
+
+Now you have two autonomous databases, **Autonomous Transaction Processing** and **ALWAYS FREE ATP**.
 	
 # Follow-up questions
 
