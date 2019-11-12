@@ -29,5 +29,11 @@ For this to work, it's important that you:
   
 ![](./images/step1/0.registration-cont2.PNG)
 
-Now you may continue to next step
+## Now you may continue to next step
 - [Create your ATP instance](/step2.md)
+
+## Follow-up questions
+
+![](./images/bilegt.JPG)
+
+[bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
