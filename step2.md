@@ -1,7 +1,7 @@
 
 ![](images/general/workshop_logo.png)
 
-# STEP 1: Create your Autonomous database
+# STEP 2: Create your Autonomous database
 
 ## Objectives
 - Create your first ATP instance 
