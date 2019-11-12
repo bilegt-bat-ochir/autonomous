@@ -7,6 +7,7 @@
 - Scale up/down your ATP
 - Configure auto-scaling
 - Accessing to performance hub
+- Move your resource to different compartment
 
 ## Scale up and down your ATP
 
@@ -40,9 +41,13 @@ The Performance Hub is a great tool to monitor our ATP status and activity. It i
 - In the upper part we will see the consumption of resources and waits of our sessions along time. In the lower part, we will be able to check the ASH (Active Session History) analysis, access the SQL Monitoring to analyze individual queries or even submit a session kill command.
 	![](./images/step3/2.performancehub.PNG)
 
+## Here is the short summary video of above steps:
+
+  ![](./images/step3/1.scaleup.gif)
+
+# Additional steps
 ## Move your resource to different compartment
 
-- - **this is additional step**
 To move resources between compartments, resource users must have sufficient access permissions on the compartment that the resource is being moved to, as well as the current compartment
 
 - In the list of Autonomous Databases, click on the display name of the database you wish to move, then click on Actions
@@ -52,13 +57,41 @@ To move resources between compartments, resource users must have sufficient acce
 - Click move resource and choose the new compartment of your ATP.
 
 	![](./images/step3/3.moveresource-cont1.png)
+	
+## Start/stop/terminate your autonomous database
 
+**Stopping your database has the following consequences:**
+	- On-going transactions are rolled back.
+	- CPU billing is halted based on full-hour cycles of usage.
+	- You will not be able to connect to your database using database clients or tools.
 
-## Here is the short summary video of above steps:
+Go to Actions, and then click Stop (or Start). When you stop your Autonomous Database, billing stops for CPU usage. Billing for storage continues when the database is stopped.
 
-  ![](./images/step3/1.scaleup.gif)
+- In the list of Autonomous Databases, click on the display name of the database you wish to stop, then click on Stop
 
+	![](./images/step3/4.manage.PNG)
 
+- Check the status, confirm that your Autonomous database is stopped.
+	
+	![](./images/step3/4.manage-cont1.PNG)
+
+- Find the database you wish to start, then click on Start
+
+	![](./images/step3/4.manage-cont2.PNG)
+
+- Check the status, confirm that your Autonomous database is started successfully.
+	
+	![](./images/step3/4.manage-cont3.PNG)
+	
+- Terminating an Autonomous Database permanently deletes it. The database data, including automatic backups, will be lost when the system is terminated. Manual backups remain in Object Storage and are not automatically deleted when you terminate an Autonomous Database. *Oracle recommends that you create a manual backup prior to terminating.
+- In the list of Autonomous Databases, click on the display name of the database you wish to administer then click terminate.
+	
+	![](./images/step3/4.manage-cont4.PNG)
+
+- Confirm that you wish to terminate your Autonomous Database in the confirmation dialo.
+	
+	![](./images/step3/4.manage-cont5.PNG)
+	
 ## You may continue to next step 
 - [APEX on Autonomous Database](step4.md)
 
