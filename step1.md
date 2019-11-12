@@ -13,7 +13,7 @@
 ![](./images/step2/0.signin.png)
 
 - You should see "Sign in to Cloud" link
-![](./images/step2/0.signing_cont1.png)
+![](./images/step2/0.signin_cont1.png)
 
 - Enter your cloud account name, which you have previously provided during you account creation, for example "mycloudtenancy". Usually you should have received a welcome email with the subject "Get Started Now With Oracle Cloud" and all the login instruction.
 
@@ -21,7 +21,7 @@
 
 - Enter your login credentials, such as admin user account with password.
 
- ![](./images/step2/0.login.png)
+ ![](./images/step2/0.login.PNG)
 
 - On the left hand menu, choose Autonomous Transaction Processing.
 
