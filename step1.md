@@ -34,6 +34,6 @@ For this to work, it's important that you:
 
 ## Follow-up questions
 
-![](./images/bilegt.JPG)
+![](./images/bilegt.jpg)
 
 [bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
