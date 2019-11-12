@@ -61,9 +61,9 @@ To move resources between compartments, resource users must have sufficient acce
 ## Start/stop/terminate your autonomous database
 
 **Stopping your database has the following consequences:**
-	- On-going transactions are rolled back.
-	- CPU billing is halted based on full-hour cycles of usage.
-	- You will not be able to connect to your database using database clients or tools.
+- On-going transactions are rolled back.
+- CPU billing is halted based on full-hour cycles of usage.
+- You will not be able to connect to your database using database clients or tools.
 
 Go to Actions, and then click Stop (or Start). When you stop your Autonomous Database, billing stops for CPU usage. Billing for storage continues when the database is stopped.
 
@@ -71,7 +71,7 @@ Go to Actions, and then click Stop (or Start). When you stop your Autonomous Dat
 
 	![](./images/step3/4.manage.PNG)
 
-- Check the status, confirm that your Autonomous database is stopped.
+- Check the status, confirm that your Autonomous database is **stopped**.
 	
 	![](./images/step3/4.manage-cont1.PNG)
 
@@ -79,7 +79,7 @@ Go to Actions, and then click Stop (or Start). When you stop your Autonomous Dat
 
 	![](./images/step3/4.manage-cont2.PNG)
 
-- Check the status, confirm that your Autonomous database is started successfully.
+- Check the status, confirm that your Autonomous database is **started** successfully.
 	
 	![](./images/step3/4.manage-cont3.PNG)
 	
@@ -88,7 +88,11 @@ Go to Actions, and then click Stop (or Start). When you stop your Autonomous Dat
 	
 	![](./images/step3/4.manage-cont4.PNG)
 
-- Confirm that you wish to terminate your Autonomous Database in the confirmation dialo.
+- Confirm that you wish to terminate your Autonomous Database in the confirmation dialog by providing database name.
+	
+	![](./images/step3/4.manage-cont5.PNG)
+	
+- Check and confirm, status is now **TERMINATED**.
 	
 	![](./images/step3/4.manage-cont5.PNG)
 	
