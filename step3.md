@@ -54,7 +54,7 @@ To move resources between compartments, resource users must have sufficient acce
 	![](./images/step3/3.moveresource-cont1.png)
 
 
-## Here is the short video of steps provisioning my ATP instance:
+## Here is the short summary video of above steps:
 
   ![](./images/step3/1.scaleup.gif)
 
