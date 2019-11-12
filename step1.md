@@ -1,5 +1,7 @@
 ![](images/workshop_logo.png)
 
+- [Go back to main](/README.md)
+
 **Prerequisites for the workshop**
 
 ## Step 1: Request an Oracle Trial account
@@ -27,5 +29,5 @@ For this to work, it's important that you:
   
 ![](./images/step1/0.registration-cont2.PNG)
 
-  Now you should continue to next step
-  [Create your ATP instance](/step2.md)
+  Now you may continue to next step
+ -[Create your ATP instance](/step2.md)
