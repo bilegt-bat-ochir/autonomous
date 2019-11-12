@@ -10,9 +10,11 @@
 
 # Steps
 - Open www.oracle.com and click on the icon in red square.
+
 ![](./images/step2/0.signin.png)
 
 - You should see "Sign in to Cloud" link
+
 ![](./images/step2/0.signin_cont1.png)
 
 - Enter your cloud account name, which you have previously provided during you account creation, for example "mycloudtenancy". Usually you should have received a welcome email with the subject "Get Started Now With Oracle Cloud" and all the login instruction.
@@ -28,8 +30,19 @@
   ![](./images/step2/0.login_cont1.png)
 
 - You should already have an ATP instance named "WORKSHOP". Click it.
+  ![](./images/step2/1.CreateATP.PNG)
+  ![](./images/step2/1.CreateATP_cont1.PNG)
   
-
+  ![](./images/step2/1.CreateATP_cont2.PNG)
+  
+  ![](./images/step2/1.CreateATP_cont3.PNG)
+  
+  ![](./images/step2/1.CreateATP_cont4.PNG)
+  
+  ![](./images/step2/1.CreateATP_cont5.PNG)
+  
+  ![](./images/step2/1.CreateATP_cont6.PNG)
+  
 ## Configuring auto-scaling
 Auto-scaling is a very powerful feature that lets our application handle peaks of traffic, while keeping costs under control at the same time. We will define a minimum number of OCPUs that our ATP will provision and the database will automatically scale up to three times that number, in case the demand arrives.
 
