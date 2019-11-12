@@ -62,11 +62,15 @@
 
 - You need to follow same steps as previous, however, in order to have your **ALWAYS FREE** autonomous database, by clicking on radio button as shown in below 
 
-  ![](./images/step2/1.createATP-cont3.PNG)
+  ![](./images/step2/1.createATP-cont3_2.PNG)
+  
+- Once you click on radio button **ALWAYS FREE**, compute power and storage will be limited by default, you cannot edit the values.
+
+  ![](./images/step2/1.createATP-cont3_3.PNG)
 
 - **License Included** option will automatically enabled when you choose to enable **ALWAYS FREE**.
 
-  ![](./images/step2/1.createATP-cont6.PNG)
+  ![](./images/step2/1.createATP-cont3_4.PNG)
 
 - Here is the short video of steps provisioning my ATP instance:
 
