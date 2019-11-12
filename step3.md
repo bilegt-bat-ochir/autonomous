@@ -51,14 +51,15 @@ To move resources between compartments, resource users must have sufficient acce
 
 - Click move resource and choose the new compartment of your ATP.
 
-	![](./images/step3/3.moveresource-cont1.PNG)
+	![](./images/step3/3.moveresource-cont1.png)
 
-- Here is the short video of steps provisioning my ATP instance:
+
+## Here is the short video of steps provisioning my ATP instance:
 
   ![](./images/step3/1.scaleup.gif)
 
 
-You may continue to next step 
+## You may continue to next step 
 - [APEX on Autonomous Database](step4.md)
 
 ## Follow-up questions
