@@ -23,8 +23,7 @@
   
   ![](./images/step4/1.apex-cont3.PNG)
 
-- You can create a workspace and a database user at sametime. Let's create new user "WORKSHOPATP" and "WORKSHOPATP" workspace will be created accordingly.
-    *Keep a note of the password as you will need it later.
+- You can create a workspace and a database user at sametime. Let's create new user "WORKSHOPATP" and "WORKSHOPATP" workspace will be created accordingly.     *Keep a note of the password as you will need it later.*
 
   ![](./images/step4/1.apex-cont4.PNG)
   
