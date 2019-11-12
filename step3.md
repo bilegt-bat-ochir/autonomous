@@ -1,5 +1,8 @@
-
+[Go back to main](/README.md)
+[Go back to previous step](/step1.md)
+# Explore Autonomous Database console #
 ## Configuring auto-scaling
+
 Auto-scaling is a very powerful feature that lets our application handle peaks of traffic, while keeping costs under control at the same time. We will define a minimum number of OCPUs that our ATP will provision and the database will automatically scale up to three times that number, in case the demand arrives.
 
 - Click on Scale Up/Down.
