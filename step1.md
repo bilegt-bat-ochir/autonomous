@@ -9,12 +9,23 @@
 - Prepare the APEX workspace
 
 # Steps
+- Open www.oracle.com and click on the icon in red square.
+![](./images/step2/0.signin.png)
 
-- Login to Oracle Cloud. You will have received a welcome email with the subject "Get Started Now With Oracle Cloud".
+- You should see "Sign in to Cloud" link
+![](./images/step2/0.signing_cont1.png)
+
+- Enter your cloud account name, which you have previously provided during you account creation, for example "mycloudtenancy". Usually you should have received a welcome email with the subject "Get Started Now With Oracle Cloud" and all the login instruction.
+
+![](./images/step2/0.signin_cont2.png)
+
+- Enter your login credentials, such as admin user account with password.
+
+ ![](./images/step2/0.login.png)
 
 - On the left hand menu, choose Autonomous Transaction Processing.
 
-  ![](./images/lab400/go_to_atp.png)
+  ![](./images/step2/0.login_cont1.png)
 
 - You should already have an ATP instance named "WORKSHOP". Click it.
   
