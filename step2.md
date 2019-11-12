@@ -77,8 +77,12 @@
   ![](./images/step2/1.createATP.gif)
 
 Now you have two autonomous databases, **Autonomous Transaction Processing** and **ALWAYS FREE ATP**.
-	
-# Follow-up questions
+
+You may continue to next step 
+- [Explore Autonomous database console](step3.md)
+
+
+## Follow-up questions
 
 ![](./images/bilegt.jpg)
 
