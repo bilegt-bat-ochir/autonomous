@@ -9,11 +9,11 @@
 
 ## Scale up and down your ATP
 
-- You can scale up and down you compute power also storage size by clicking on Scale Up/Down.
+- Open you ATP instance and you can scale up, down your compute power, storage size by clicking on Scale Up/Down.
 
 	![](./images/step3/1.scaleup.PNG)
 
-- Enter 4 OCPU in compute and 2TB in storage values. 
+- Enter 4 OCPU in compute and 2TB in storage values
   
 	![](./images/step3/1.scaleup-cont1.PNG)
 	
@@ -34,10 +34,10 @@ Auto-scaling is a very powerful feature that lets our application handle peaks o
 The Performance Hub is a great tool to monitor our ATP status and activity. It is accessible from the Service Console.
 
 - Open the Autonomous Database Details page and click on Performance Hub.
-	![](./images/lab100/PerfHubAccess.png)
+	![](./images/step3/2.performancehub_1.PNG)
 
 - In the upper part we will see the consumption of resources and waits of our sessions along time. In the lower part, we will be able to check the ASH (Active Session History) analysis, access the SQL Monitoring to analyze individual queries or even submit a session kill command.
-	![](./images/lab100/PerfHub.png)
+	![](./images/step3/2.performancehub.PNG)
 
 You may continue to next step 
 - [APEX on Autonomous Database](step4.md)
