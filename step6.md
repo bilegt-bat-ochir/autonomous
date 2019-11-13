@@ -4,8 +4,7 @@
 # Step 6: REST in APEX
 ## Objectives
 - Define RESTful services in Autonomous database.
-- Create your second workspace RESTATP and create an empty applicatio.
-- Utilize RESTful service using GET,POST,PUT,DELETE methods from the second workspace RESTATP.
+- Create your second workspace RESTATP and create an empty application.
 
 What is REST(Representational State Transfer), It's an architecture that provides interoperability between two computer systems using HTTP(s) protocol as a transport protocol.
 Content usually represented via **JSON** or **XML** and great thing about REST is the two participants in the communication can be completely different in terms of:
@@ -129,15 +128,8 @@ end;/
 
   ![](./images/step6/2.websource-cont2_1.PNG)
 
-
-## Utilize RESTful service from APEX application
-
-
-
-
-
 ## You may continue to next step 
-- [REST in APEX](README.md)
+- [Utilize RESTful service from APEX](step7.md)
 
 ## Follow-up questions
 
