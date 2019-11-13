@@ -104,7 +104,7 @@ end;/
 ```
 - You have just created the base path "CUSTOMERS", that will be used to access this RESTful service and the URI Template "LAB" that will be used to access the specific resource. The URI Template for the resource is appended to the server path and module base path.
 
-![](./images/step6/1.sqldev-cont4.PNG)
+![](./images/step6/1.sqldev-cont4.png)
 
 - If you copy the full URL and paste in the browser, you will get JSON dataset. 
 
