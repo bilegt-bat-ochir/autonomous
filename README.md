@@ -1,6 +1,6 @@
 [Autonomous Hands on LAB](/README.md)
 
-![images](/images/step1/0.welcome.PNG)
+![images](/images/welcome.jpeg)
 
 # Autonomous Database Hands on labs #
 ## Lab Introduction
