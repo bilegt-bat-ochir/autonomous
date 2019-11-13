@@ -25,12 +25,33 @@ In this part we will enable REST services in WORKSHOPATP instance.
 
   ![](./images/step4/1.apex-cont6.PNG)
   
- - Go to your APEX workspace
+- Open SQL Workshop, this is built-in, web edition of Oracle SQL developer, and can fulfill the most of your needs. Go to RESTful services tab.
 
   ![](./images/step6/1.sqldev.PNG)
+  
+- As you can see, currently there is no schema is enabled for REST.
   ![](./images/step6/1.sqldev-cont1.PNG)
+- Go to SQL commands tab and run following code. 
+                  ```
+                  BEGIN
+                       ords.enable_schema (
+                           p_enabled               => TRUE,
+                           p_schema                => 'WORKSHOPATP',
+                           p_url_mapping_type      => 'BASE_PATH',
+                           p_url_mapping_pattern   => 'workshopatp',
+                           p_auto_rest_auth        => TRUE
+                       );
+                       COMMIT;
+                  END;
+                  ```
+  Result as below:
+  
   ![](./images/step6/1.sqldev-cont2.PNG)
+
+- Go back to RESTful services tab, now you can see the differences. We have enabled REST services in **WORKSHOPATP** schema.
+
   ![](./images/step6/1.sqldev-cont3.PNG)
+  
 ## Here is the short summary video of above steps:
 
 
