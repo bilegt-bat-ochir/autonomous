@@ -1,10 +1,9 @@
 - [Go back to main](/README.md)
 - [Go back to previous step](/step5.md)
 
-# Step 6: REST in APEX
+# Step 6: REST in Autonomous
 ## Objectives
 - Define RESTful services in Autonomous database.
-- Create your second workspace RESTATP and create an empty application.
 
 What is REST(Representational State Transfer), It's an architecture that provides interoperability between two computer systems using HTTP(s) protocol as a transport protocol.
 Content usually represented via **JSON** or **XML** and great thing about REST is the two participants in the communication can be completely different in terms of:
