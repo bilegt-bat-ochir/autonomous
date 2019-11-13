@@ -10,7 +10,7 @@
 ## Import application to your existing APEX workspace
 
 Our starting point is an existing CRM application used by a fictional company. This contains basic information about our company's customers. The application is used by the sales/service employees of our company to look up details whenever a customer calls them.
-First download the application that we will install. You can find it [here](./files/f100.sql). Download and save it as f100.sql. 
+First download the application that we will install. You can find it [here](./files/f102.sql). Download and save it as f102.sql. 
 
 - Go to your ATP database and open the Service Console.
 
