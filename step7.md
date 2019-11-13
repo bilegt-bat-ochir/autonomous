@@ -1,7 +1,7 @@
 - [Go back to main](/README.md)
 - [Go back to previous step](/step6.md)
 
-# Step 6: REST in APEX
+# Step 7: Access REST service from APEX
 ## Objectives
 - Create your second workspace with an empty application
 - Utilize RESTful service using GET,POST,PUT,DELETE methods from the second workspace RESTATP.
