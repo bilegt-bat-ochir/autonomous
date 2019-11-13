@@ -111,12 +111,26 @@ end;/
 
 ## Create an app in a second workspace RESTATP.
 
+-  You will follow same steps as we did in [step 4](step4.md). Logout from your current APEX workspace, and login as **ADMIN**
 
+  ![](./images/step6/2.websource.PNG)
+
+- Click on **Create workspace** to configure your second APEX workspace. Let's name it **RESTATP** and remember *keep note of the password as you will need it later.*
+  
+  ![](./images/step6/2.websource-cont1.PNG)
+  
+- New workspace and database user is created. Now click on hyperlink "RESTATP".
+
+  ![](./images/step6/2.websource-cont2.PNG)
+  
+- Provide your password when you created "RESTATP" user in previous step.
+
+  ![](./images/step6/2.websource-cont2_1.PNG)
+  
 ## Utilize RESTful service
 
 
 ## Here is the short summary video of above steps:
-
 
 
 ## You may continue to next step 
