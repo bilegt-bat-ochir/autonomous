@@ -4,7 +4,7 @@
 # Step 6: REST in APEX
 ## Objectives
 - Define RESTful services in Autonomous database.
-- Create an app in a second workspace RESTATP.
+- Create your second workspace RESTATP and create an empty applicatio.
 - Utilize RESTful service using GET,POST,PUT,DELETE methods from the second workspace RESTATP.
 
 What is REST(Representational State Transfer), It's an architecture that provides interoperability between two computer systems using HTTP(s) protocol as a transport protocol.
@@ -109,9 +109,9 @@ end;/
 
 ![](./images/step6/1.sqldev-cont5.PNG)
 
-## Create an app in a second workspace RESTATP.
+## Create your second workspace RESTATP and create an empty applicatio.
 
--  You will follow same steps as we did in [step 4](step4.md). Logout from your current APEX workspace, and login as **ADMIN**
+-  You will follow same steps as we did in [step 4](step4.md). Logout from your current APEX workspace, and login as **ADMIN** user. When you are logging as **ADMIN** user, name of the workspace is **INTERNAL** and password is your database password which you have provided in ATP instance provisioning.
 
   ![](./images/step6/2.websource.PNG)
 
@@ -126,7 +126,8 @@ end;/
 - Provide your password when you created "RESTATP" user in previous step.
 
   ![](./images/step6/2.websource-cont2_1.PNG)
-  
+
+
 ## Utilize RESTful service
 
 
