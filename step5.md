@@ -1,7 +1,7 @@
 - [Go back to main](/README.md)
 - [Go back to previous step](/step4.md)
 
-# Step 4: Create your first application in APEX
+# Step 5: Create your first application in APEX
 ## Objectives
 - Explore the bundled features of Autonomous database.
 - Become familiar with APEX.
