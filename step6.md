@@ -106,11 +106,12 @@ end;/
 
 ![](./images/step6/1.sqldev-cont4.PNG)
 
-- If you copy the full URL and paste in the browser, you will get JSON dataset.
+- If you copy the full URL and paste in the browser, you will get JSON dataset. 
 
 ![](./images/step6/1.sqldev-cont5.PNG)
+- Congratulations, you are now able utilize ATP using RESTful services.
 
-## Create your second workspace RESTATP and create an empty applicatio.
+## Create your second workspace RESTATP and create an empty application.
 
 -  You will follow same steps as we did in [step 4](step4.md). Logout from your current APEX workspace, and login as **ADMIN** user. When you are logging as **ADMIN** user, name of the workspace is **INTERNAL** and password is your database password which you have provided in ATP instance provisioning.
 
@@ -129,10 +130,10 @@ end;/
   ![](./images/step6/2.websource-cont2_1.PNG)
 
 
-## Utilize RESTful service
+## Utilize RESTful service from APEX application
 
 
-## Here is the short summary video of above steps:
+
 
 
 ## You may continue to next step 
