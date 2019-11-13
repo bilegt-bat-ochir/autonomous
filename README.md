@@ -22,5 +22,7 @@ This hands-on lab will allow you to explore Autonomous Database
 
 
 
+*[Other resources](https://apex.oracle.com/en/learn/tutorials/)*
+
 
 [Autonomous Hands on LAB](/README.md)
