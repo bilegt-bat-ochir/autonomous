@@ -56,6 +56,7 @@ END;
 - Go to SQL Commands tab and run following code. 
 
 ```
+
 begin
     ords.delete_module(
         p_module_name => 'customers.rest' );
@@ -67,7 +68,7 @@ begin
         p_pattern     => 'lab/' );
     ords.define_template(
         p_module_name => 'customers.rest',
-        p_pattern     => 'lab/:c_id' );
+        p_pattern     => 'lab/:cust_id' );
     ords.define_handler(
         p_module_name => 'customers.rest',
         p_pattern     => 'lab/',
@@ -76,28 +77,28 @@ begin
         p_source      => 'select * from customers' );
     ords.define_handler(
         p_module_name => 'customers.rest',
-        p_pattern     => 'lab/:c_id',
+        p_pattern     => 'lab/:cust_id',
         p_method      => 'GET',
         p_source_type => ords.source_type_collection_item,
-        p_source      => 'select * from customers where cust_id = :c_id' );
+        p_source      => 'select * from customers where cust_id=:cust_id' );
     ords.define_handler(
         p_module_name => 'customers.rest',
         p_pattern     => 'lab/',
         p_method      => 'POST',
         p_source_type => ords.source_type_plsql,
-        p_source      => 'begin insert into customers (CUST_FIRST_NAME,CUST_LAST_NAME,CUST_GENDER,CUST_YEAR_OF_BIRTH,CUST_MARITAL_STATUS,CUST_STREET_ADDRESS,CUST_POSTAL_CODE,CUST_CITY,CUST_COUNTRY,CUST_MAIN_PHONE_NUMBER,CUST_INCOME_LEVEL,CUST_CREDIT_LIMIT,CUST_EMAIL) values (:c_fname,:c_lname,:c_gender,:c_yob,:c_marital,:c_address,:c_postal,:c_city,:c_country,:c_phone,:c_income,:c_credit,:c_email);:forward_location:=:c_id;:status_code:=201;end;' );
+        p_source      => 'begin insert into customers (cust_first_name,cust_last_name,cust_gender,cust_year_of_birth,cust_marital_status,cust_street_address,cust_postal_code,cust_city,cust_country,cust_main_phone_number,cust_income_level,cust_credit_limit,cust_email) values (:cust_first_name,:cust_last_name,:cust_gender,:cust_year_of_birth,:cust_marital_status,:cust_street_address,:cust_postal_code,:cust_city,:cust_country,:cust_main_phone_number,:cust_income_level,:cust_credit_limit,:cust_email);:forward_location:=:cust_id;:status_code:=201;end;' );
     ords.define_handler(
         p_module_name => 'customers.rest',
-        p_pattern     => 'lab/:c_id',
+        p_pattern     => 'lab/:cust_id',
         p_method      => 'PUT',
         p_source_type => ords.source_type_plsql,
-        p_source      => 'begin update customers set CUST_FIRST_NAME=:c_fname,CUST_LAST_NAME=:c_lname,CUST_GENDER=:c_gender,CUST_YEAR_OF_BIRTH=:c_yob,CUST_MARITAL_STATUS=:c_marital,CUST_STREET_ADDRESS=:c_address,CUST_POSTAL_CODE=:c_postal,CUST_CITY=:c_city,CUST_COUNTRY=:c_country,CUST_MAIN_PHONE_NUMBER=:c_phone,CUST_INCOME_LEVEL=:c_income,CUST_CREDIT_LIMIT=:c_credit,CUST_EMAIL=:c_email where cust_id=:c_id; :forward_location:=:c_id;:status_code:=200;end;' );
+        p_source      => 'begin update customers set cust_first_name=:cust_first_name,cust_last_name=:cust_last_name,cust_gender=:cust_gender,cust_year_of_birth=:cust_year_of_birth,cust_marital_status=:cust_marital_status,cust_street_address=:cust_street_address,cust_postal_code=:cust_postal_code,cust_city=:cust_city,cust_country=:cust_country,cust_main_phone_number=:cust_main_phone_number,cust_income_level=:cust_income_level,cust_credit_limit=:cust_credit_limit,cust_email=:cust_email where cust_id=:cust_id; :forward_location:=:cust_id;:status_code:=200;end;' );
     ords.define_handler(
         p_module_name => 'customers.rest',
-        p_pattern     => 'lab/:c_id',
+        p_pattern     => 'lab/:cust_id',
         p_method      => 'DELETE',
         p_source_type => ords.source_type_plsql,
-        p_source      => 'begin delete customers where cust_id=:c_id;:status_code:=200;end;' );
+        p_source      => 'begin delete customers where cust_id=:cust_id;:status_code:=200;end;' );
     COMMIT;
 end;/
 ```
