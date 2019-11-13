@@ -33,7 +33,8 @@ In this part we will enable REST services in WORKSHOPATP instance.
   ![](./images/step6/1.sqldev-cont1.PNG)
 - Go to SQL commands tab and run following code. 
 
-```BEGIN
+```
+BEGIN
      ords.enable_schema (
          p_enabled               => TRUE,
          p_schema                => 'WORKSHOPATP',
