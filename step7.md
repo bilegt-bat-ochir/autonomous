@@ -40,93 +40,80 @@
 
   ![](./images/step6/3.rest-cont2.PNG)  
   
-
-- Find **Web Source Modules** from Data Sources section.
+- You have some options here when dialog pops up, but since this is our first web source, we go with the first option.
 
   ![](./images/step6/3.rest-cont3.PNG)  
   
-
-- Find **Web Source Modules** from Data Sources section.
+- Choose **Oracle REST Data Services**, provide a name, and paste the full URL of your REST service from the previous step.
 
   ![](./images/step6/3.rest-cont4.PNG)  
   
-
-- Find **Web Source Modules** from Data Sources section.
+- Click Next
 
   ![](./images/step6/3.rest-cont5.PNG)  
   
-
-- Find **Web Source Modules** from Data Sources section.
+- If web source works, it will show you some result. Click on **Create Web Source**.
 
   ![](./images/step6/3.rest-cont6.PNG)  
   
-
-- Find **Web Source Modules** from Data Sources section.
+- Now you should be seeing your web source and successfull message, click on new web source and review what it can do.
 
   ![](./images/step6/3.rest-cont7.PNG)  
   
-
-- Find **Web Source Modules** from Data Sources section.
+- Notice, only GET and POST operations have been added. Click on **Add Operation**
 
   ![](./images/step6/3.rest-cont7_1.PNG)  
-  
 
-- Find **Web Source Modules** from Data Sources section.
+- We will add 3 more operations GET, PUT, DELETE with variable :cust_id, as shown in below one by one.
 
   ![](./images/step6/3.rest-cont7_2.PNG)  
+  
+- Make sure you save your work after adding each operation:
 
-- Find **Web Source Modules** from Data Sources section.
+  ![](./images/step6/3.rest-cont7_6.PNG)
+
+- You should have now 5 operations available for your REST web source.
 
   ![](./images/step6/3.rest-cont7_5.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Save your web source.
 
   ![](./images/step6/3.rest-cont7_6.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Now let's test it by adding a Report page with some forms. Go back to your application and **Create a Page**.
 
   ![](./images/step6/3.rest-cont8.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Choose **Report with Form** and click Next
 
   ![](./images/step6/3.rest-cont8_1.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Provide report page name and form page name as below
 
   ![](./images/step6/3.rest-cont8_2.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- You can create a navigation menu
 
   ![](./images/step6/3.rest-cont8_3.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Now we need to choose **Web Source** and find your previously created module, then click Next
 
   ![](./images/step6/3.rest-cont8_4.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Choose primary key column as **CUST_ID** column and create your page.
 
   ![](./images/step6/3.rest-cont8_5.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- Run your application
 
   ![](./images/step6/3.rest-cont9.PNG)  
 
-- Find **Web Source Modules** from Data Sources section.
+- You will see a grid with full of data which are retrieved from **WORKSHOPATP** using RESTful service.
 
   ![](./images/step6/3.rest-cont9_1.PNG)  
 
-
-
-
-
-
-
-
-
-
-
-
-
+- This concludes the generic idea of Autonomous database and oracle REST data service. Autonomous Database includes native APEX support, you cano use the RESTful Services development pages in APEX to build and maintain your services and REST enabled objects. 
+- However you can connect almost any service to your Autonomous Database. Enjoy!
 
 ## You may continue to next step 
 - [Next step is not ready](README.md)
