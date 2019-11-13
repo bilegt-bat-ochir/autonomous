@@ -4,6 +4,7 @@
 # Step 4: APEX on Autonomous database
 ## Objectives
 - Configure your APEX workspace
+Oracle Application Express (APEX) is a feature of Oracle Database, including the Autonomous Data Warehouse (ADW) and Autonomous Transaction Processing (ATP) services. To start, you will need to have an ATP instance and then access APEX from within the instance's Service Console.
 
 ## Configure the APEX workspace
 
