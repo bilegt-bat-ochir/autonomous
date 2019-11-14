@@ -55,7 +55,7 @@
 
   ![](./images/step2/1.createATP-cont5.PNG)
 
-- Choose **BYOL** option
+- If you have license you can choose **BYOL** option, or if you don't have appropriate license and you wish to get one choose **License Included**
 
   ![](./images/step2/1.createATP-cont6.PNG)
   
