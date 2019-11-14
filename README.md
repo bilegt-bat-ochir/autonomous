@@ -26,3 +26,13 @@ This hands-on lab will allow you to explore Autonomous Database
 
 
 [Autonomous Hands on LAB](/README.md)
+
+
+
+{::nomarkdown}
+<html>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+</html>
+{:/}
