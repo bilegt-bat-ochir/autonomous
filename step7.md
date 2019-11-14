@@ -117,6 +117,7 @@
 
 ## You may continue to next step 
 - [Next step is not ready](README.md)
+- However you maybe find [this file](/files/ATP-Hands-on-Lab.pdf) as outdated, but I'd suggest you to try at least Node.js and Python parts.
 
 ## Follow-up questions
 
