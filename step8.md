@@ -134,6 +134,7 @@ SELECT Y_BOX_GAMES, Y_BOX_GAMES_PRED, COUNT(*) FROM N1_TEST_DATA GROUP BY Y_BOX_
 ```
 ![](./images/step7/1.Notebook-cont8.PNG)  
 We see, from top to bottom: 1. The true negatives, 2. The false positives, 3. The false negatives and 4. The true positives.
+
 ## Run the prediction
 - So far we've built and validated the model, we will all the customers who don't have Y Box Games yet, then predict whether they are likely to be interested in a purchase. In order to do so, let's run below code to create a new table **CUST_PREDICTION** using our prediction model
 
@@ -149,7 +150,7 @@ grant select on cust_prediction to workshopatp
 ![](./images/step7/2.Apexpart.PNG)  
 *Note that we could go a step further and schedule this prediction, but this is not part of the workshop today
 
-##Integrate the result into the APEX application
+## Integrate the result into the APEX application
 - Now let's tie it all together and go back to the APEX application. Remember, we want to show a recommendation to our employee when the customer he's speaking to it a likely candidate to buy Y Box Games.
 
 - Open APEX. You can do this from Service Console of the database, then Admin, then APEX. Login to the workspace that we created earlier. Workspace name: WORKSHOPATP, User name: WORKSHOPATP, use the password that you entered when you created the workspace.
