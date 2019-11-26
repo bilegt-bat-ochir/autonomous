@@ -14,8 +14,8 @@ This hands-on lab will allow you to explore Autonomous Database
 - **STEP 5:** [Create your first application in APEX](step5.md)
 - **STEP 6:** [REST in Autonomous](step6.md)
 - **STEP 7:** [Access REST service from APEX](step7.md)
-- **STEP 8:** [Oracle Command Line](README.md) *coming soon*
-- **STEP 9:** [Machine Learning](README.md) *coming soon*
+- **STEP 8:** [Explore Machine Learning](step8.md) *coming soon*
+- **STEP 9:** [Oracle Command Line](README.md) *coming soon*
 
 
 
