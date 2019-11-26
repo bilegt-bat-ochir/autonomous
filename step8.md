@@ -50,6 +50,7 @@ The magic of machine learning is that it will find out exactly what the relation
 ![](./images/step7/1.Notebook-cont1.PNG)  
 
 - Split the input data into two sets: 60% for train data
+
 ```
 %script
 BEGIN
@@ -59,10 +60,11 @@ WHEN OTHERS THEN NULL;
 END;
 /
 CREATE TABLE N1_TRAIN_DATA AS SELECT * FROM SH.SUPPLEMENTARY_DEMOGRAPHICS SAMPLE (60) SEED (1);
-
 ```
+
 ![](./images/step7/1.Notebook-cont2-1.PNG)  
 - Split the input data into two sets: 40% for testing the data
+
 ```
 %script
 BEGIN
@@ -73,9 +75,11 @@ END;
 /
 CREATE TABLE N1_TEST_DATA AS SELECT * FROM SH.SUPPLEMENTARY_DEMOGRAPHICS MINUS SELECT * FROM N1_TRAIN_DATA;
 ```
+
 ![](./images/step7/1.Notebook-cont2-2.PNG)  
 - The model will contain the defintion of the relationship between the driving attributes and the target attribute (Y Box Games). Creating those relationships is done during the training phase. Defining a model requires several parameters. We first store those parameters in a table. This table can have any name. In our case the only parameter is the type of algorithm, in this case a decision tree model.
 Enter the following SQL to create the parameters table with machine learning algorithm decision tree.
+
 ```
 %script
 BEGIN
@@ -87,14 +91,17 @@ END;
 CREATE TABLE N1_BUILD_SETTINGS (SETTING_NAME VARCHAR2(30), SETTING_VALUE VARCHAR2(4000));
 INSERT INTO N1_BUILD_SETTINGS (SETTING_NAME, SETTING_VALUE) VALUES ('ALGO_NAME','ALGO_DECISION_TREE');
 ```
+
 ![](./images/step7/1.Notebook-cont3.PNG)  
 
 - Now we are ready to create and train the model. Run the following PL/SQL to do this.
+
 ```
 %script
 CALL DBMS_DATA_MINING.DROP_MODEL('N1_CLASS_MODEL');
 CALL DBMS_DATA_MINING.CREATE_MODEL('N1_CLASS_MODEL', 'CLASSIFICATION', 'N1_TRAIN_DATA', 'CUST_ID','Y_BOX_GAMES', 'N1_BUILD_SETTINGS');
 ```
+
 The parameters mean the following:
 1. The name that our model will have. This is stored in the database as a special type of object.
 2. Whether it's a classification or a regression algorithm. In this case it's a classification algorithm, because we're predicting a class (ownership yes/no) rather than a continuous value.
@@ -107,15 +114,18 @@ The parameters mean the following:
 
 - We would like to know in what percentage of the cases, the model makes a correct prediction of Y Box Games ownership. This is where the test set, that we created earlier, comes in handy. Since the test set contains real customers, we know whether they actually own Y Box Games. We will verify the performance by letting our model predict Y Box Games for those same records. This will allow us to verify if the predicted value of Y Box Games is the same as the actual value.
 So, create a new placeholder column in the test set that will hold the predicted value and then make the prediction.
+
 ```
 %script
 ALTER TABLE N1_TEST_DATA ADD Y_BOX_GAMES_PRED NUMBER(1);
 UPDATE N1_TEST_DATA SET Y_BOX_GAMES_PRED = PREDICTION(N1_CLASS_MODEL USING *);
 ```
+
 ![](./images/step7/1.Notebook-cont5.PNG)  
 You see that this uses special SQL syntax. The above means that we want to predict the value using model N1_CLASS_MODEL and all of the driving columns in the dataset will be used.
 
 - Let's see the result
+
 ```
 SELECT CUST_ID, Y_BOX_GAMES, Y_BOX_GAMES_PRED FROM N1_TEST_DATA
 ```
@@ -123,15 +133,19 @@ SELECT CUST_ID, Y_BOX_GAMES, Y_BOX_GAMES_PRED FROM N1_TEST_DATA
 ![](./images/step7/1.Notebook-cont6.PNG)  
 
 - Let's see in what percentage of cases our prediction is correct
+
 ```
 SELECT TO_CHAR(((SELECT COUNT(*) FROM N1_TEST_DATA WHERE Y_BOX_GAMES = Y_BOX_GAMES_PRED) / (SELECT COUNT(*) FROM N1_TEST_DATA)) * 100, '999.99') CORRECT_PRED_PERCENTAGE FROM DUAL;
 ```
+
 ![](./images/step7/1.Notebook-cont7.PNG)  
 The result is an accuracy of almost 90%.
 - We can look into this number in more detail with a confusion matrix. This can easily be created by grouping on the two Y Box Games columns.
+
 ```
 SELECT Y_BOX_GAMES, Y_BOX_GAMES_PRED, COUNT(*) FROM N1_TEST_DATA GROUP BY Y_BOX_GAMES, Y_BOX_GAMES_PRED ORDER BY 1, 2;
 ```
+
 ![](./images/step7/1.Notebook-cont8.PNG)  
 We see, from top to bottom: 1. The true negatives, 2. The false positives, 3. The false negatives and 4. The true positives.
 
@@ -143,10 +157,13 @@ CREATE TABLE CUST_PREDICTION AS
 SELECT CUST_ID, PREDICTION(N1_CLASS_MODEL USING *) PREDICTION, PREDICTION_PROBABILITY(N1_CLASS_MODEL USING *) PRED_PROBABILITY
 FROM SH.SUPPLEMENTARY_DEMOGRAPHICS WHERE Y_BOX_GAMES = 0;
 ```
+
 - Then we will grant a right to use this table to **WORKSHOPATP** schema 
+
 ```
 grant select on cust_prediction to workshopatp
 ```
+
 ![](./images/step7/2.Apexpart.PNG)  
 *Note that we could go a step further and schedule this prediction, but this is not part of the workshop today
 
@@ -160,6 +177,7 @@ grant select on cust_prediction to workshopatp
 ![](./images/step7/2.Apexpart-cont0.PNG) 
 
 - We will create a view by adding a "RECOMMENDATION" column to it. Here is the script and run it in **SQL Developer**.
+
 ```
 CREATE OR REPLACE FORCE EDITIONABLE VIEW  WORKSHOPATP.CUSTOMER_V (
   "CUST_ID","CUST_FIRST_NAME","CUST_LAST_NAME","CUST_GENDER","CUST_YEAR_OF_BIRTH","CUST_MARITAL_STATUS","CUST_STREET_ADDRESS","CUST_POSTAL_CODE",
@@ -174,6 +192,7 @@ SELECT
   and p.prediction = 1 )	
   from workshopatp.customers c;
 ```
+
 ![](./images/step7/1.Notebook-cont9.PNG)  
 Note how this SQL will add a column "Recommendation", and it will be a text that explains whether the employee should try to upsell Y Box Games to this customer. In addition, the recommendation will only be added when the probability of an upsell is high enough.
 
