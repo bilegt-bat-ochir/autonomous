@@ -1,69 +1,76 @@
 ## Step 9: Control your autonomous database using OCI CLI
 
-The CLI is a tool that lets you work with most of the available services in Oracle Cloud Infrastructure. The CLI provides the same core functionality as the Console, plus additional commands. The CLI's functionality and command help are based on the service's API.
+The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks. The CLI provides the same core functionality as the Console, plus additional commands. Some of these, such as the ability to run scripts, extend the Console's functionality.
 
-- [Installation guide](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm)
+The CLI is built on Python (version 2.7.5 or 3.5 or later), running on Mac, Windows, or Linux. The Python code makes calls to Oracle Cloud Infrastructure APIs to provide the functionality implemented for the various services. These are REST APIs that use HTTPS requests and responses. 
+
+We are going to see how to manage Autonomous database instances using OCI CLI.
+
+- [Official Installation guide](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm)
 - [Getting started guide](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliusing.htm#StartingCLI)
 
-**Pre-requisites: Create SSH Key Pair**
-[Create an SSH Key Pair](#create-an-ssh-key-pair)
+**Pre-requisites:**
+1. An Oracle Cloud Infrastructure account
+2. A user created in that account, in a group with a policy that grants the desired permissions
+3. A SSH keypair used for signing API requests, with the public key uploaded to Oracle. Only the user calling the API should possess the private key.
 
-To install OCI CLI on your local machine, Enter Command:
+.[Generate your key](https://www.oci-workshop.com/keys/)
+
+4. Python version 2.7.5 or 3.5 or later, running on Mac, Windows, or Linux. Note that if you use the CLI Installer and do not have Python on your machine, the Installer offers to automatically install Python for you. If you already have Python installed on your machine, you can use the python --version command to find out which version is installed.
+
+**Installation**
+1. Download and install: Use the command belo to download and install the oci CLI and required software packages. During installation, you are prompted to specify where you would like to install the oci binaries. You are also given the option to update your $PATH environment setting and enable shell/tab completion.
+
+To install OCI CLI on your local machine, 
+
+Linux:
+
+``` 
+bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+```
+
+Windows:
+
+```
+powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
+```
+
+2. Upload API key: In the OCI Web console, you must register the RSA public key that is associated with your oci CLI configuration. You must register the public key by using the API Keys section on the OCI console User Details page.
+   .[Generate your key](https://www.oci-workshop.com/keys/) 
+   
+- Upload your API to OCI   
+![](/images/step9/0.API.PNG)
 
 
-    ``` # bash -c "$(curl –L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" ```
+- After successfull upload, you will see the fingerprint of your ssh public key, copy that. It will be used for configuration
 
-6.  When prompted for Install directory, Press Enter (choose default)
+![](/images/step9/0.API.PNG)
 
-7. When prompted for ‘oci’ directory, Press Enter (choose default)
+3. Configure OCI, use the command below to configure the OCI CLI. During configuration, you are prompted to specify the location where the configuration file is stored. 
 
-8.  When prompted for ‘Y/N’ for $Path, Enter Y, when prompted for path for rc file Press Enter (choose default)
+```
+C:\Users\BatOchir>oci setup config
 
-9.  Check oci CLI installed version, Enter command:
+Enter a location for your config [C:\Users\BatOchir\.oci\config]:
+File: C:\Users\BatOchir\.oci\config already exists. Do you want to overwrite? [y/N]: y
+Enter a user OCID: ocid1.user.oc1----------------------------------------------------------z7wa
+Enter a tenancy OCID: ocid1.tenancy.oc1----------------------------------------------------------z7wa
+Enter a region (e.g. ca-toronto-1, eu-frankfurt-1, uk-london-1, us-ashburn-1, us-gov-ashburn-1, us-gov-chicago-1, us-gov-phoenix-1, us-langley-1, us-luke-1, us-phoenix-1): eu-frankfurt-1
+Do you want to generate a new RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y/n]: y
+Enter a directory for your keys to be created [C:\Users\BatOchir\.oci]:
+Enter a name for your key [oci_api_key]:
+Public key written to: C:\Users\BatOchir\.oci\oci_api_key_public.pem
+Enter a passphrase for your private key (empty for no passphrase):
+Private key written to: C:\Users\BatOchir\.oci\oci_api_key.pem
+Fingerprint: d4:--:--:--:--:--:--:--:--:--:--:--:--:--:--:12
+Config written to C:\Users\BatOchir\.oci\config
+    If you haven't already uploaded your public key through the console,
+    follow the instructions on the page linked below in the section 'How to
+    upload the public key':
+        https://docs.us-phoenix-1.oraclecloud.com/Content/API/Concepts/apisigningkey.htm#How2
 
-    ``` # oci -v ```
+```
 
-    ![](img/100_CLI_001.png)
+You are also prompted to supply the user OCID, tenant OCID, and region that are associated with your Autonomous database instances. These values can be determined by examining the OCI Web console. 
+Finally, you are prompted to specify an RSA key pair to use for request authentication. You need to choose same ssh key which you have uploaded to OCI console, and also need to use the same fingerprint.
 
-    **NOTE:** Version should be minimum 2.5.X (3/23/2019)
-
-10.  Next we will configure OCI CLI. Enter command:
-
-     `# oci setup config`
-
-11. Press Enter when prompted for directory name to accept the default. You will be prompted to enter user OCID
-
-
-12. Switch to OCI Console window, Click user icon (Top Right of OCI Console Window) and click **User Settings**. In User settings click **copy** next to OCID for your user name
-
-![](img/user-settings-01.png)
-![](img/user-settings-02.png)
-
-13. Switch to the SSH terminal session and paste the user OCID using mouse/touch pad and press Enter. You will be prompted to Enter Tenancy OCID
-
-14. Switch to OCI Console window, Click user icon (Top Right of OCI Console Window) and click your Tenancy name, copy the OCID as was done for user OCID. Also note down your region (in this example "us-ashburn-1")
-
-![](img/user-settings-01.png)
-![](img/tenancy-ocid.png)
-
-16. Switch to the SSH terminal window and paste the tenancy OCID using mouse/touch pad and press Enter. You will be prompted to Enter your region.
-
-17. Type your region and press Enter. Enter Y for ‘New
-RSA key pair’. Press Enter and accept default options for directories. Press Enter when prompted for passphrase (i.e leave it empty)
-
-18. In the SSH terminal session for second compute, Enter command:
-
-     ```
-     # cd /home/opc/.oci
-     # ls
-     ```
-    
-Verify the API key files and OCI CLI config files exist.
-
-19. Enter command
-
-    `# cat config`
-
-and ensure fingerprint exists. Leave the git-bash session open as we will verify the
-finger print in config file aginst OCI, once we upload api
-keys next.
