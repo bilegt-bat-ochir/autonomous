@@ -55,10 +55,11 @@ Change the visibility to **Public**, accept all other defaults.  Click **Save Ch
 To load data from the OCI object store, you need to create an Auth Token for your object store account. The communication between your Autonomous Database and the object store relies on this Auth Token and username/password authentication.
 
 - Go to your Identity console, choose from the menu on the top left select **Identity->Users**. Once on the Users Page click on your username. Click **Auth Tokens** under **Resources** on the left of the console, then click **Generate token**.
+  ![](/images/step10/1.token.PNG)
 
 *Copy the generated token to notepad located on your desktop. The token does not appear again and you WILL NEED this token to load your data into ADW.*
 
-  ![](/images/step10/1.token.PNG)
+  ![](/images/step10/1.token-cont1.PNG)
     
 ## Create Object Store Credentials in your Autonomous Database ##
 
@@ -98,10 +99,9 @@ Before data is copied, the tables and objects need to be created in ADW.  In thi
 - Now you have empty tables and staged data in the OCI Object store. To get the data from the object store to your ADB instance, you need to get some information about the object. To move the data we will be using the dbms_cloud.copy_data procedure. The procedure takes information about the location of the data you staged in your object store.  Review the procedure.
 
     ```
-    SQL    
     begin
     dbms_cloud.copy_data(
-        table_name =>'<ENTER_TABLE_NAME>',
+        table_name =>'SALES',
         credential_name =>'BucketCredential',
         file_uri_list =>'<entertenancy-bucket-address>/chan_v3.dat',
         format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
