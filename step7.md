@@ -116,8 +116,7 @@
 - However you can connect almost any service to your Autonomous Database. Enjoy!
 
 ## You may continue to next step 
-- [Next step is not ready](README.md)
-- However you maybe find [this file](/files/ATP-Hands-on-Lab.pdf) as outdated, but I'd suggest you to try at least Node.js and Python parts.
+- [Machine Learning features in Autonomous Database](/step8.md)
 
 ## Follow-up questions
 
