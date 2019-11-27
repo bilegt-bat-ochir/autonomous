@@ -1,7 +1,7 @@
 - [Go back to main](/README.md)
 - [Go back to previous step](/step8.md)
 
-## Step 9: Control your autonomous database using OCI CLI
+## Step 9: Manage Autonomous Database using OCI CLI
 
 The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks. The CLI provides the same core functionality as the Console, plus additional commands. Some of these, such as the ability to run scripts, extend the Console's functionality.
 
