@@ -76,8 +76,39 @@ You are also prompted to supply the user OCID, tenant OCID, and region that are 
 Finally, you are prompted to specify an RSA key pair to use for request authentication. You need to choose same ssh key which you have uploaded to OCI console, and also need to use the same fingerprint.
 
 ## Use command line
+Most commands must specify a service, followed by a resource type and then an action. The basic command line syntax is:
+```
+oci <service> <type> <action> <options>
+```
 
+For example, this syntax is applied as follows:
 
+- compute is the <service>
+- instance is the resource <type>
+- launch is the <action>, and
+- the rest of the command string consists of <options>.
+The following command to list all accessible compartments in your tenancy.
+
+```
+oci iam compartment list --access-level ACCESSIBLE --all
+```
+The following command to list all database options available to you based on your access level.
+```
+oci db -h
+```
+
+The following command to create an autonomous database in your compartment.
+```
+oci db autonomous-database create -c ocid1.compartment.oc1..aaaaaaaaqwv27hv7knzkbobfl6ucivtdmbkjn5h3cqxqeuzj2ac6ahkdioiq --db-name CLIdatabase --cpu-core-count 1 --data-storage-size-in-tbs 1 --admin-password PA##w0rd12345 --display-name myCLIdatabase --license-model LICENSE_INCLUDED
+```
+
+With following command you can stop/start yourautonomous database, you can even include this in bash script and schedule it. This is the great way to save your cost of running an Autonomous Database.
+
+```
+oci db autonomous-database stop --autonomous-database-id ocid1.autonomousdatabase.oc1.eu-frankfurt-1.abtheljtpp2dd4yya6uwwg4uhd7rmgcb6bxpked645lswh57xk2qyryad5ma
+
+oci db autonomous-database start --autonomous-database-id ocid1.autonomousdatabase.oc1.eu-frankfurt-1.abtheljtpp2dd4yya6uwwg4uhd7rmgcb6bxpked645lswh57xk2qyryad5ma
+```
 
 ## You may continue to next step 
 - [More coming](README.md)
