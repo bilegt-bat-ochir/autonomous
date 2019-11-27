@@ -45,7 +45,7 @@ Windows:
 - API key and SSH keys
 In the OCI Web console, you must register the RSA public key that is associated with your oci CLI configuration. You must register the public key by using the API Keys section on the OCI console User Details page. [Generate your key](https://www.oci-workshop.com/keys/) using this link.  
    
-- Upload your API to OCI, go to your Identity console, choose from the menu on the top left select **Identity->Users**. Once on the Users Page click on your username. Click **API Keys** under **Resources** on the left of the console, then click **Add Public Key**
+- Upload your API public key in PEM format to OCI. Go to your Identity console, choose from the menu on the top left select **Identity->Users**. Once on the Users Page click on your username. Click **API Keys** under **Resources** on the left of the console, then click **Add Public Key**
 
 ![](/images/step9/0.API.PNG)
 
