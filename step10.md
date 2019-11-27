@@ -124,3 +124,15 @@ SELECT COUNT(1) FROM ADMIN.SALES;
 
 Success! Notice that the data has been copied from the object store to the tables in your ADW instance. This can be done for multiple tables providing an easy migration path from your existing databaset to Autonomous Database.
 
+
+### You may continue to next step 
+- [More coming](README.md)
+- [This file](/files/ATP-Hands-on-Lab.pdf) is maybe outdated, but I'd suggest you to try at least Node.js and Python parts. Also, there are tonnes of documents and github pages to help you for your Autonomous Journey :) 
+- I will be adding more contents to this page, maybe it's good idea to bookmark this page. Thank you.
+
+## Follow-up questions
+
+![](./images/bilegt.jpg)
+
+[bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
+
