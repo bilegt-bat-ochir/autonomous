@@ -1,3 +1,6 @@
+- [Go back to main](/README.md)
+- [Go back to previous step](/step8.md)
+
 ## Step 9: Control your autonomous database using OCI CLI
 
 The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks. The CLI provides the same core functionality as the Console, plus additional commands. Some of these, such as the ability to run scripts, extend the Console's functionality.
@@ -74,3 +77,15 @@ Config written to C:\Users\BatOchir\.oci\config
 You are also prompted to supply the user OCID, tenant OCID, and region that are associated with your Autonomous database instances. These values can be determined by examining the OCI Web console. 
 Finally, you are prompted to specify an RSA key pair to use for request authentication. You need to choose same ssh key which you have uploaded to OCI console, and also need to use the same fingerprint.
 
+
+
+## You may continue to next step 
+- [More coming](README.md)
+- [This file](/files/ATP-Hands-on-Lab.pdf) is maybe outdated, but I'd suggest you to try at least Node.js and Python parts. Also, there are tonnes of documents and github pages to help you for your Autonomous Journey :) 
+- I will be adding more contents to this page, maybe it's good idea to bookmark this page. Thank you.
+
+## Follow-up questions
+
+![](./images/bilegt.jpg)
+
+[bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
