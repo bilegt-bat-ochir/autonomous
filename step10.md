@@ -1,68 +1,45 @@
 # Load data into Autonomous database
----
-layout: ziplab
-description: Learn how to load data from an Oracle Object Store into the Oracle Autonomous Data Warehouse.
-tags: Oracle Cloud, Autonomous Data Warehouse, ADW, Oracle Cloud Infrastructure, OCI, Object Store, Data Load
-permalink: /data-management-library/autonomous-database/ziplabs/2019/adw-loading/index.html
----
-# Loading Data into ADW #
 
-## Before You Begin ##
-This 20-minute lab walks you through the steps to get data from external databases and load it into the Oracle Autonomous Data Warehouse (ADW) on Oracle Cloud Infrastructure (OCI). This lab assumes you have already provisioned an ADW instance.
-
-### Background ###
 You can load data into Autonomous Database using Oracle Database tools and 3rd party data integration tools. Data can be loaded:
-* from files local to your client computer, or
-* from files stored in a cloud-based object store
+- from files local to your client computer, or
+- from files stored in a cloud-based object store
 
-For the fastest data loading experience Oracle recommends uploading the source
-files to a cloud-based object store before loading the data into your Autonomous Database.
+For the fastest data loading experience Oracle recommends uploading the source files to a cloud-based object store before loading the data into your Autonomous Database.
 
-Today we will use the PL/SQL package **DBMS_CLOUD**. The DBMS_CLOUD package supports loading
-data files from the following Cloud sources: 
+We will use the PL/SQL package **DBMS_CLOUD**. The DBMS_CLOUD package supports loading data files from the following Cloud sources: 
+
 1. Oracle Cloud Infrastructure Object Storage (OCI Object Storage)
 2. Oracle Cloud Infrastructure Object Storage Classic
 3. Amazon AWS S3
 
-This tutorial shows how to load data from OCI Object
-Storage using two of the procedures in the DBMS_CLOUD package:
+This tutorial shows how to load data from OCI Object storage using two of the procedures in the DBMS_CLOUD package:
 * `create_credential`: Stores the object store credentials in your Autonomous Database schema.
 * `copy_data`: Loads the specified source file to a table. 
 
+**Pre-requisites**
 
-### What Do You Need? ###
-* Access to an instance of Oracle Autonomous Data Warehouse (ADW)
-* Have completed the previous lab **Provisioning Autonomous Data Warehouse**.
-
+* Completion of [Step 2](/step2.md)
+* A bucket in OCI Object storage
+* Authentication token of your user
 
 ## Load a data file to your Object Store ##
-Oracle Cloud Infrastructure offers two distinct storage class tiers.  Object Storage, for data which you need fast, immediate and frequent access and Archive Storage, for data which you seldom or rarely access.  In this ziplab you will stage data into an object store in the Oracle Cloud Infrastructure Object Storage service.
 
-1. Login to your Oracle Cloud Infrastructure Console
-2. Select **Object Storage** -> **Object Storage** from the drop down menu on the top left of the Oracle Cloud Infrastructure console.
+The first thing is first, you need to upload your dump file to somewhere, but I prefer to upload to Oracle object storage, which is incredibly cheap and way to easy to access. Because OCI offers two distinct storage class tiers. 
+Object Storage, for data which you need fast, immediate and frequent access and Archive Storage, for data which you seldom or rarely access.
 
-    ![](img/adw-loading-object-storage2.png)
+- Login to your Oracle Cloud Infrastructure Console
 
-3. Select **Create Bucket** to create a bucket to load your data in.  This will be your staging area.  Later in this lab you will move the data from this staging area to your ADW instance.
-For this lab, we'll use the `root` compartment.
+- Select **Object Storage** -> **Object Storage** from the drop down menu on the top left of the Oracle Cloud Infrastructure console.
 
-    ![](img/adw-loading-create-bucket-screen.png)
+![](/images/step10/0.objectstorage.png)
 
-4. Enter the following information: 
-    * **Bucket Name**:  `bucket-<city you were born in>-<your initials>`  (example: *bucket-london-kam*)
-    * **Storage Tier**:  `Standard`
-    * **Encryption**: `Encrypt using Oracle Managed Keys`
+- Select **Create Bucket** to create a bucket to load your data in. 
 
-    ![](img/adw-loading-create-bucket.png)
+ ![](/images/step10/0.objectstorage-cont1.png)
 
-5. Click **Create Bucket**.
-6. Click on the bucket name you just created.  
+- Click on the bucket name you just created. [Download sample files](./files/datafiles_for_sh_tables.zip) and extract to your local storage, then upload everything to your newly created bucket 
 
-    ![](img/adw-loading-buckets.png)
- 
-7. Review the screen. Note you have created an empty bucket with no objects in it and the visibility is set to private. 
-
-    ![](img/adw-loading-bucket-screen.png)
+ ![](/images/step10/0.objectstorage-cont2.png)
 
 8. Click **[here](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/adwc/OBE_Loading%20Your%20Data/files/datafiles_for_sh_tables.zip)** to download the zip file with the objects you will be importing into cloud storage.  The file will download to your desktop.  
 9. Double click and **extract** the folder to your desktop.
