@@ -26,3 +26,7 @@ This hands-on lab will allow you to explore Autonomous Database
 
 
 [Autonomous Hands on LAB](/README.md)
+
+*Disclaimer: Views, ideas expressed are my own and do not necessarily reflect those of Oracle*
+
+*Special thanks to Jeroen Kloosterman and David Peake*
