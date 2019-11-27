@@ -241,7 +241,7 @@ You have learned how to integrate the prediction in an APEX application.
 
 ## You may continue to next step 
 - [Manage your Autonomous database using OCI CLI](/step9.md)
-- However you maybe find [this file](/files/ATP-Hands-on-Lab.pdf) as outdated, but I'd suggest you to try at least Node.js and Python parts.
+
 
 ## Follow-up questions
 
