@@ -16,7 +16,7 @@ This hands-on lab will allow you to explore Autonomous Database
 - **STEP 7:** [Access REST service from APEX](step7.md)
 - **STEP 8:** [Explore Machine Learning](step8.md)
 - **STEP 9:** [Oracle Command Line](step9.md)
-- **STEP 10:** [Load data into Autonomous](README.md) *coming soon*
+- **STEP 10:** [Load data into Autonomous](step10.md)
 
 
 
