@@ -15,9 +15,7 @@ We are going to see how to manage Autonomous database instances using OCI CLI.
 **Pre-requisites:**
 1. An Oracle Cloud Infrastructure account
 2. A user created in that account, in a group with a policy that grants the desired permissions
-3. A SSH keypair used for signing API requests, with the public key uploaded to Oracle. Only the user calling the API should possess the private key.
-
-.[Generate your key](https://www.oci-workshop.com/keys/)
+3. A SSH keypair used for signing API requests, with the public key uploaded to Oracle. Only the user calling the API should possess the private key.[Download your key](https://www.oci-workshop.com/keys/) from this link, it will automatically create a set of files for you.
 
 4. Python version 2.7.5 or 3.5 or later, running on Mac, Windows, or Linux. Note that if you use the CLI Installer and do not have Python on your machine, the Installer offers to automatically install Python for you. If you already have Python installed on your machine, you can use the python --version command to find out which version is installed.
 
