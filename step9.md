@@ -19,7 +19,7 @@ We are going to see how to manage Autonomous database instances using OCI CLI.
 
 4. Python version 2.7.5 or 3.5 or later, running on Mac, Windows, or Linux. Note that if you use the CLI Installer and do not have Python on your machine, the Installer offers to automatically install Python for you. If you already have Python installed on your machine, you can use the python --version command to find out which version is installed.
 
-**Installation**
+### Installation ###
 Download and install: Use the command below to download and install the oci CLI and required software packages. During installation, you are prompted to specify where you would like to install the oci binaries. You are also given the option to update your $PATH environment setting and enable shell/tab completion.
 
 To install OCI CLI on your local machine, 
@@ -73,7 +73,7 @@ Config written to C:\Users\BatOchir\.oci\config
 You are also prompted to supply the user OCID, tenant OCID, and region that are associated with your Autonomous database instances. These values can be determined by examining the OCI Web console. 
 Finally, you are prompted to specify an RSA key pair to use for request authentication. You need to choose same ssh key which you have uploaded to OCI console, and also need to use the same fingerprint.
 
-## Use command line
+### Use command line ###
 Most commands must specify a service, followed by a resource type and then an action. The basic command line syntax is:
 ```
 oci <service> <type> <action> <options>
@@ -108,7 +108,7 @@ oci db autonomous-database stop --autonomous-database-id ocid1.autonomousdatabas
 oci db autonomous-database start --autonomous-database-id ocid1.autonomousdatabase.oc1.eu-frankfurt-1.abtheljtpp2dd4yya6uwwg4uhd7rmgcb6bxpked645lswh57xk2qyryad5ma
 ```
 
-## You may continue to next step 
+### You may continue to next step 
 - [More coming](README.md)
 - [This file](/files/ATP-Hands-on-Lab.pdf) is maybe outdated, but I'd suggest you to try at least Node.js and Python parts. Also, there are tonnes of documents and github pages to help you for your Autonomous Journey :) 
 - I will be adding more contents to this page, maybe it's good idea to bookmark this page. Thank you.
