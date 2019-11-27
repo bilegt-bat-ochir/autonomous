@@ -109,9 +109,7 @@ oci db autonomous-database start --autonomous-database-id ocid1.autonomousdataba
 ```
 
 ### You may continue to next step 
-- [More coming](README.md)
-- [This file](/files/ATP-Hands-on-Lab.pdf) is maybe outdated, but I'd suggest you to try at least Node.js and Python parts. Also, there are tonnes of documents and github pages to help you for your Autonomous Journey :) 
-- I will be adding more contents to this page, maybe it's good idea to bookmark this page. Thank you.
+- [Load data into Autonomous Database](step10.md)
 
 ## Follow-up questions
 
