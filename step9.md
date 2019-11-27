@@ -22,7 +22,7 @@ We are going to see how to manage Autonomous database instances using OCI CLI.
 4. Python version 2.7.5 or 3.5 or later, running on Mac, Windows, or Linux. Note that if you use the CLI Installer and do not have Python on your machine, the Installer offers to automatically install Python for you. If you already have Python installed on your machine, you can use the python --version command to find out which version is installed.
 
 **Installation**
-1. Download and install: Use the command belo to download and install the oci CLI and required software packages. During installation, you are prompted to specify where you would like to install the oci binaries. You are also given the option to update your $PATH environment setting and enable shell/tab completion.
+Download and install: Use the command below to download and install the oci CLI and required software packages. During installation, you are prompted to specify where you would like to install the oci binaries. You are also given the option to update your $PATH environment setting and enable shell/tab completion.
 
 To install OCI CLI on your local machine, 
 
@@ -44,9 +44,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.
 - Upload your API to OCI   
 ![](/images/step9/0.API.PNG)
 
-
 - After successfull upload, you will see the fingerprint of your ssh public key, copy that. It will be used for configuration
-
 ![](/images/step9/0.API.PNG)
 
 3. Configure OCI, use the command below to configure the OCI CLI. During configuration, you are prompted to specify the location where the configuration file is stored. 
@@ -76,6 +74,8 @@ Config written to C:\Users\BatOchir\.oci\config
 
 You are also prompted to supply the user OCID, tenant OCID, and region that are associated with your Autonomous database instances. These values can be determined by examining the OCI Web console. 
 Finally, you are prompted to specify an RSA key pair to use for request authentication. You need to choose same ssh key which you have uploaded to OCI console, and also need to use the same fingerprint.
+
+## Use command line
 
 
 
