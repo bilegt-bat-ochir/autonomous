@@ -51,7 +51,7 @@ In the OCI Web console, you must register the RSA public key that is associated 
 
 - After successfull upload, you will see the fingerprint of your ssh public key, copy that. It will be used for configuration in the later step
 
-![](/images/step9/0.API.PNG)
+![](/images/step9/0.API-cont1.PNG)
 
 - Configure OCI, use the command below to configure the OCI CLI. During configuration, you are prompted to specify the location where the configuration file is stored. 
 
