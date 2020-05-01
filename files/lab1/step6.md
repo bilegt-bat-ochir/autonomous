@@ -1,4 +1,4 @@
-- [Go back to main](/README.md)
+- [Go back to main](AutonomousWorkshop.md)
 - [Go back to previous step](step5.md)
 
 # Step 6: REST in Autonomous
