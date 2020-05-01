@@ -30,7 +30,7 @@ For this to work, it's important that you:
 ![](/images/lab1/step1/0.registration-cont2.PNG)
 
 ## Now you may continue to next step
-- [Create your ATP instance](/step2.md)
+- [Create your ATP instance](step2.md)
 
 ## Follow-up questions
 
