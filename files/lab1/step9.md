@@ -47,7 +47,7 @@ In the OCI Web console, you must register the RSA public key that is associated 
    
 - Upload your API public key in PEM format to OCI. Go to your Identity console, choose from the menu on the top left select **Identity->Users**. Once on the Users Page click on your username. Click **API Keys** under **Resources** on the left of the console, then click **Add Public Key**
 
-![](/images/lab1step9/0.API.PNG)
+![](/images/lab1/step9/0.API.PNG)
 
 - After successfull upload, you will see the fingerprint of your ssh public key, copy that. It will be used for configuration in the later step
 
