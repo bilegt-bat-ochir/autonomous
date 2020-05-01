@@ -17,4 +17,5 @@ Here are the list of the current labs:
 | [Block Storage](/files/ocilab/blockstorage.md)                        |
 | [Object Storage](/files/ocilab/objectstorage.md)                    | 
 | [File Storage](/files/ocilab/filestorage.md)                          |
+
 *Disclaimer: Views, ideas expressed are my own and do not necessarily reflect those of Oracle*
