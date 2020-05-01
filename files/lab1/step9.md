@@ -1,5 +1,5 @@
-- [Go back to main](/README.md)
-- [Go back to previous step](/step8.md)
+- [Go back to main](AutonomousWorkshop.md)
+- [Go back to previous step](step8.md)
 
 ## Step 9: Manage Autonomous Database using OCI CLI
 
@@ -47,11 +47,11 @@ In the OCI Web console, you must register the RSA public key that is associated 
    
 - Upload your API public key in PEM format to OCI. Go to your Identity console, choose from the menu on the top left select **Identity->Users**. Once on the Users Page click on your username. Click **API Keys** under **Resources** on the left of the console, then click **Add Public Key**
 
-![](/images/step9/0.API.PNG)
+![](/images/lab1step9/0.API.PNG)
 
 - After successfull upload, you will see the fingerprint of your ssh public key, copy that. It will be used for configuration in the later step
 
-![](/images/step9/0.API-cont1.PNG)
+![](/images/lab1/step9/0.API-cont1.PNG)
 
 - Configure OCI, use the command below to configure the OCI CLI. During configuration, you are prompted to specify the location where the configuration file is stored. 
 
@@ -122,6 +122,6 @@ oci db autonomous-database start --autonomous-database-id ocid1.autonomousdataba
 
 ## Follow-up questions
 
-![](./images/bilegt.jpg)
+![](/images/bilegt.jpg)
 
 [bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
