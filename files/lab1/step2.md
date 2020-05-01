@@ -1,7 +1,7 @@
 - [Go back to main](AutonomousWorkshop.md)
 - [Go back to previous step](step1.md)
 
-![](images/general/workshop_logo.png)
+![](/images/welcome.jpeg)
 
 # STEP 2: Create your Autonomous database
 
