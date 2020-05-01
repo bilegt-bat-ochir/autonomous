@@ -1,8 +1,8 @@
+![images](/images/welcome.jpeg)
+
 # Welcome to Autonomous Database Hands on labs #
 ## Lab Introduction
-
 This hands-on lab will allow you to explore Autonomous Database
-
 - **STEP 1:** [Preparation for the workshop](/files/lab1/step1.md)
 - **STEP 2:** [Create your ATP instance](/files/lab1/step2.md)
 - **STEP 3:** [Explore Autonomous database console](/files/lab1/step3.md)
@@ -21,3 +21,5 @@ This hands-on lab will allow you to explore Autonomous Database
 
 
 [OCI Lab Materials](/README.md)
+
+*Special thanks to Jeroen Kloosterman and David Peake*
