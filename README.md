@@ -4,9 +4,7 @@
 Hi there, here you will get some hands on experience of Oracle Cloud Infrastructure through these hands on labs. 
 Here are the list of the current labs:
 ### Data Management
-| **Name**                                                                            |  
-| ----------------------------------------------------------------------------------- |
-|**LAB:** [Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)           |
+**LAB:** [Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)  
 
 ### Core Labs *Coming soon*
 
