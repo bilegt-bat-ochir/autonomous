@@ -2,13 +2,16 @@
 
 # Welcome to Autonomous Database Hands on labs #
 ## Lab Introduction
-### Deployment Options for Autonomous Databases
+### What is Oracle Autonomous Database?
+It is a family of self-driving, self-securing, and self-repairing cloud services. It’s the world’s first autonomous database, and it redefines database management by using machine learning and automation to eliminate human labor, human error, and manual tuning, reducing cost and complexity and ensuring higher reliability, security, and more operational efficiency. Autonomous Database supports a complex mix of high-performance transactions, including reporting, batch, Internet of Things (IoT), and machine learning in a single database. This simplifies application development and deployment and enables real-time analytics, personalization, and fraud detection.
+
+### What deployment options are available for Autonomous Database?
 
 There are two options for deploying an autonomous database.
 - Serverless deployment. In serverless deployment, multiple users share the same cloud infrastructure resources. Serverless deployment is the simplest option; it requires no minimum commitment and users can take advantage of quick data provisioning and application development. Users also enjoy independent compute and storage scalability. In this deployment model, users are responsible for database provisioning and management while the provider takes care of infrastructure deployment and management responsibilities.
 - Dedicated deployment. Dedicated deployment allows the user to provision the autonomous database within a dedicated (unshared) cloud infrastructure. This deployment model has no shared processor, memory, network, or storage resources. Dedicated deployment offers greater control and customization over the entire environment and is ideal for users who want to tailor their autonomous database to meet specific organizational needs. Additionally, dedicated deployment allows for an easy transition from on-premise databases to a fully autonomous and isolated private database cloud.
 
-### Components of an Autonomous Database
+### What type of workloads can your run in an Autonomous Database?
 
 An autonomous database consists of two key elements that align with workload types.
 - Data warehouse performs numerous functions related to business intelligence activities, and uses data that’s been prepared in advance for analysis. The data warehouse environment also manages all database lifecycle operations, can perform query scans on millions of rows, is scalable to business needs, and can be deployed in a matter of seconds.
