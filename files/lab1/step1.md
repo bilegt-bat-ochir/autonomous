@@ -1,4 +1,4 @@
-![](./images/welcome.jpeg)
+![](/images/welcome.jpeg)
 
 - [Go back to main](AutonomousWorkshop.md)
 
