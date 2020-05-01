@@ -1,4 +1,4 @@
-- [Go back to main](/README.md)
+- [Go back to main](AutonomousWorkshop.md)
 - [Go back to previous step](step2.md)
 
 # STEP 3: Explore Autonomous Database console #
