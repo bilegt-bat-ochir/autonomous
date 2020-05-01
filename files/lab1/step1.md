@@ -1,6 +1,6 @@
-![](images/workshop_logo.png)
+![](./images/welcome.jpeg)
 
-- [Go back to main](/README.md)
+- [Go back to main](AutonomousWorkshop.md)
 
 **Prerequisites for the workshop**
 
