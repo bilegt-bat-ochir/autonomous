@@ -1,4 +1,4 @@
-- [Go back to main](/README.md)
+- [Go back to main](AutonomousWorkshop.md)
 - [Go back to previous step](step3.md)
 
 # Step 4: APEX on Autonomous database
