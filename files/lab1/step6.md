@@ -1,5 +1,5 @@
 - [Go back to main](/README.md)
-- [Go back to previous step](/step5.md)
+- [Go back to previous step](step5.md)
 
 # Step 6: REST in Autonomous
 ## Objectives
@@ -11,7 +11,7 @@ Content usually represented via **JSON** or **XML** and great thing about REST i
   - Database (Oracle, Microsoft, MongoDB, Hadoop, Couchbase, etc.)
   - Architecture (On Premises, Cloud, Mixed)
   
- ![](./images/step6/0.rest.png)
+ ![](/images/lab1/step6/0.rest.png)
 
 We will learn just how easy it is to build Oracle APEX apps utilizing RESTful Services.
 
@@ -20,14 +20,14 @@ We will learn just how easy it is to build Oracle APEX apps utilizing RESTful Se
 In this part we will enable REST services in WORKSHOPATP instance.
 - Go to your APEX workspace
 
-  ![](./images/step4/1.apex-cont6.PNG)
+  ![](/images/lab1/step4/1.apex-cont6.PNG)
   
 - Open SQL Workshop, this is built-in, web edition of Oracle SQL developer, and can fulfill the most of your needs. Go to RESTful services tab.
 
-  ![](./images/step6/1.sqldev.PNG)
+  ![](/images/lab1/step6/1.sqldev.PNG)
   
 - As you can see, currently there is no schema is enabled for REST.
-  ![](./images/step6/1.sqldev-cont1.PNG)
+  ![](/images/lab1/step6/1.sqldev-cont1.PNG)
 - Go to SQL commands tab and run following code. 
 
 ```
@@ -45,11 +45,11 @@ END;
   
   Result as below:
   
-  ![](./images/step6/1.sqldev-cont2.PNG)
+  ![](/images/lab1/step6/1.sqldev-cont2.PNG)
 
 - Go back to RESTful services tab, now you can see the differences. We have enabled REST services in **WORKSHOPATP** schema. But there is no object is accessible.
 
-  ![](./images/step6/1.sqldev-cont3.PNG)
+  ![](/images/lab1/step6/1.sqldev-cont3.PNG)
 
 - Go to SQL Commands tab and run following code. 
 
@@ -102,11 +102,11 @@ end;/
 ```
 - You have just created the base path "CUSTOMERS", that will be used to access this RESTful service and the URI Template "LAB" that will be used to access the specific resource. The URI Template for the resource is appended to the server path and module base path.
 
-![](./images/step6/1.sqldev-cont4.png)
+![](/images/lab1/step6/1.sqldev-cont4.png)
 
 - If you copy the full URL and paste in the browser, you will get JSON dataset. 
 
-![](./images/step6/1.sqldev-cont5.PNG)
+![](/images/lab1/step6/1.sqldev-cont5.PNG)
 
 - Congratulations, you are now able utilize ATP using RESTful services.
 
@@ -115,6 +115,6 @@ end;/
 
 ## Follow-up questions
 
-![](./images/bilegt.jpg)
+![](/images/bilegt.jpg)
 
 [bilegt.bat.ochir@oracle.com](mailto:bilegt.bat.ochir@oracle.com)
