@@ -15,26 +15,15 @@ Once you are successfully created your cloud account, you will receive a confirm
   - Tenant, User name and Password
   - URL for the Console: [https://oracle.com](https://oracle.com)
   - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Microsoft Edge.
-### Data Management
-**LAB:** [Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)  
-Here are the list of the current labs:
-### Core Labs *Coming soon*
 
-| **CoreLabs**                                     | 
-| -------------------------------------------------|
-| [Virtual Cloud Network](/files/ocilab/vcn.md)    |
-| [Compute](/files/ocilab/compute.md)              | 
-| [Block Storage](/files/ocilab/blockstorage.md)   |
-| [Object Storage](/files/ocilab/objectstorage.md) |
-| [File Storage](/files/ocilab/filestorage.md)     |
+### Lab Structures
 
-| **CoreLabs**                                    |  **Data Management Labs**|
+| **CoreLabs**    *Coming soon*                   |  **Data Management Labs**|
 | ------------------------------------------------|------------------------- |
-| [Virtual Cloud Network](/files/ocilab/vcn.md)   |[Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)    |
-| [Compute](/files/ocilab/compute.md)             |  |
-| [Block Storage](/files/ocilab/blockstorage.md)  |  |
-| [Object Storage](/files/ocilab/objectstorage.md)|  |
-| [File Storage](/files/ocilab/filestorage.md)    |  |
+| [Compartment](/files/ocilab/compartment.md)   |[Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)    |
+| [Groups](/files/ocilab/groups.md)             |  |
+| [Policies](/files/ocilab/blockstorage.md)  |  |
+
 
 
 
