@@ -29,7 +29,7 @@ Here are the list of the current labs:
 | [File Storage](/files/ocilab/filestorage.md)     |
 
 | **CoreLabs**                                    |  **Data Management Labs**|
-| -------------------------------------------------------------------------- |
+| ------------------------------------------------|------------------------- |
 | [Virtual Cloud Network](/files/ocilab/vcn.md)   |[Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)    |
 | [Compute](/files/ocilab/compute.md)             |  |
 | [Block Storage](/files/ocilab/blockstorage.md)  |  |
