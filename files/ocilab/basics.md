@@ -122,8 +122,9 @@ Click on the blue **Create Policy** button to create some polices for AppTeam in
 
 ![Create Policy](/images/ocilab/4_policies_create_app.PNG)
 * Enter following policy statements for App_team. 
+
 | **Statement**                                                             | **Explanation** | 
-|---------------------------------------------------------------------------|-----------------|
+| ---------------------------------------------------------------------------|----------------- |
 | Allow group App_team to manage instance-family in compartment Application | Grant to do everything with instances in Application compartment|
 | Allow group App_team to manage volume-family in compartment Application | Grant to attach/detach any existing volumes that already exist in compartment Application |
 | Allow group App_team to use virtual-network-family in tenancy | Grant to use network resources in tenancy level, it can be changed to compartment level |
