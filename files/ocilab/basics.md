@@ -5,8 +5,9 @@
 ## Objectives
 * Understand IAM concepts, 
   - [What is compartment?](#what-is-compartment)
-  - [What is group?](#groups)
-  - [What is users?](#users)
+  - [What is policy?](#what-is-policy)
+  - [What is group?](#what-is-group)
+  - [What is user?](#what-is-user)
   - [how do you authorize them using policies?](#real-cool-heading) 
 - Create your first compartment
 - Create your first groups and users
@@ -25,7 +26,7 @@ Once you are successfully created your cloud account, you will receive a confirm
   - URL for the Console: [https://oracle.com](https://oracle.com)
   - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Microsoft Edge.
 ## Knowledge Check: IAM understanding
-# What is compartment?
+### What is compartment?
 
 Compartment is tenancy-wide and across regions resource. It is a logical resource used for separating resources from each other based on different needs. Suppose you need to create separate compartments for your application team, database team, and networking teams from each other. Each of them can have different needs and different access level. [Refer to official oracle document](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcompartments.htm)
 
