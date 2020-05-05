@@ -2,7 +2,7 @@
 
 - [Go back to main](/README.md)
 
-## Objectives
+# Objectives
 * [Understand IAM concepts](#knowledge-check-iam-understanding)
   - [What is compartment?](#what-is-compartment)
   - [What is policy?](#what-is-policy)
@@ -34,7 +34,7 @@ Once you are successfully created your cloud account, you will receive a confirm
 Compartment is tenancy-wide and across regions resource. It is a logical resource used for separating resources from each other based on different needs. Suppose you need to create separate compartments for your application team, database team, and networking teams from each other. Each of them can have different needs and different access level. [Refer to official oracle document](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcompartments.htm)
 
 When creating a compartment, you must provide a name for it (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores) that is unique within its parent compartment. 
-*You can create subcompartments in compartments to create hierarchies that are 6 levels deep.
+*You can create subcompartments in compartments to create hierarchies that are 6 levels deep.*
 
 After creating a compartment, you need to write at least one policy for it, otherwise no one can access to given compartment.
 
@@ -45,7 +45,7 @@ After creating a compartment, you need to write at least one policy for it, othe
 #### What is user? 
 
 
-## Step 1: Login to the your account for the first time
+#### Step 1: Login to the your account for the first time
 
 After your cloud account creation, you will receive confirmation email:
 ![Sign_in_email]( /images/ocilab/1_sign_email.PNG)
@@ -61,13 +61,12 @@ When you sign in to the Console, the dashboard is displayed.
 You will notice something in address bar. OCI generates region specific login addresses and each tenants should use correct link.
 In my case, ap-tokyo-1, which means my region is Japan and data center is in Tokyo. 
 
-*Full list of [OCI regions and data centers](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm)
+*Full list of [OCI regions and data centers](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) can be found here*
 
+#### Step 2: Create your compartments
 
-## Step 2: Create your compartments
+#### Step 3: Create your user groups
 
-## Step 3: Create your user groups
+#### Step 4: Create your policies
 
-## Step 4: Create your policies
-
-## Step 5: Create your users and add to existing groups
+#### Step 5: Create your users and add to existing groups
