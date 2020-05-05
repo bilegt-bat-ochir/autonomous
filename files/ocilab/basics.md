@@ -8,12 +8,15 @@
   - [What is policy?](#what-is-policy)
   - [What is group?](#what-is-group)
   - [What is user?](#what-is-user)
-  - [how do you authorize them using policies?](#real-cool-heading) 
-- Create your first compartment
-- Create your first groups and users
-- Create your policies and attach it to compartment
+  - [How do you authorize them using policies?](#User-authorization) 
+* [Create your first compartment](#step-2-create-your-compartments)
+* [Create your first group](#step-3-create-your-user-groups)
+* [Create your policies and attach it to compartment](#step-4-create-your-policies)
+* [Create some users and add to existing groups](#step-5-create-your-users-and-add-to-existing-groups)
 
-## Pre-Requisites: Oracle Cloud Account
+
+## Pre-Requisites: 
+### Create your Oracle Cloud Account
 - First of all, you need an Oracle Cloud account. Sign up [here](https://oracle.com/free) to create a free-tier account. 
 - Use your Always Free resources as long as you want with no time constraints—subject only to the capacity limits noted. 
 - You will receive $300 of free credits good for up to 30 days of Oracle Cloud usage. 
@@ -25,8 +28,8 @@ Once you are successfully created your cloud account, you will receive a confirm
   - Tenant, User name and Password
   - URL for the Console: [https://oracle.com](https://oracle.com)
   - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Microsoft Edge.
-## Knowledge Check: IAM understanding
-### What is compartment?
+### Knowledge Check: IAM understanding
+#### What is compartment?
 
 Compartment is tenancy-wide and across regions resource. It is a logical resource used for separating resources from each other based on different needs. Suppose you need to create separate compartments for your application team, database team, and networking teams from each other. Each of them can have different needs and different access level. [Refer to official oracle document](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcompartments.htm)
 
@@ -35,11 +38,11 @@ When creating a compartment, you must provide a name for it (maximum 100 charact
 
 After creating a compartment, you need to write at least one policy for it, otherwise no one can access to given compartment.
 
-### What is policy? 
+#### What is policy? 
 
-### What is group? 
+#### What is group? 
 
-### What is user? 
+#### What is user? 
 
 
 ## Step 1: Login to the your account for the first time
