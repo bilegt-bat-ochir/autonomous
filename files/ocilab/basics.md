@@ -3,7 +3,7 @@
 - [Go back to main](/README.md)
 
 ## Objectives
-* Understand IAM concepts, 
+* [Understand IAM concepts](#knowledge-check-iam-understanding)
   - [What is compartment?](#what-is-compartment)
   - [What is policy?](#what-is-policy)
   - [What is group?](#what-is-group)
