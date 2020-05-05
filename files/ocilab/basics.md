@@ -27,18 +27,12 @@ Once you are successfully created your cloud account, you will receive a confirm
 After your cloud account creation, you will receive confirmation email:
 ![Sign_in_email]( /images/ocilab/1_sign_email.PNG)
 
-Click on the portrait icon in the top-right section of the browser window, then click on the **Sign in to Cloud** link.
+Click on the blue "Sign In to Oracle Cloud" button in email, which will take you to login window, then click on the **Sign in** link.
 
-   ![Main Sign-in page]( img/img001.png)
+![Sign_in_email]( /images/ocilab/1_sign_in.PNG)
 
-3. Enter the name of your tenancy (aka your account name, not your user name), then click on the **Next** button.
+When you sign in to the Console, the dashboard is displayed.
 
-   ![Enter tenancy name]( img/img002.png)
+![Sign_in_email]( /images/ocilab/1_sign_in_console.PNG)
 
-4. Oracle Cloud Infrastructure is integrated with Identity Cloud Services, you will see a screen validating your Identity Provider. Enter your username and password. Click **Sign In**.
-
-   ![Username and password fields]( img/img003.png)
-
-5. When you sign in to the Console, the dashboard is displayed.
-
-   ![Dashboard view]( img/img004.png)
+You will notice something in address bar. OCI generates region specific login addresses and each tenants should use correct link.
