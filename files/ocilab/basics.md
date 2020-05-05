@@ -113,7 +113,7 @@ A group for my network division
 
 #### Step 4: Create your policies
 We grant resource permissions to certain groups and users by writing some policies. With right set of policies you will have good governance in your cloud tenancy. 
-I strongly suggest you to review and [refer to official oracle document](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Concepts/overview.htm) 
+I strongly suggest you to review and [refer to official oracle document](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Concepts/overview.htm). I am creating my policies in root compartment just to avoid level of complexity. 
 
 Click on left top hamburger menu, hover on **Identity**, then select **Policies**
 ![Create Policy](/images/ocilab/4_policies_create.PNG)
@@ -130,7 +130,67 @@ Click on the blue **Create Policy** button to create some polices for AppTeam in
 | Allow group App_team to use virtual-network-family in tenancy | Grant to use network resources in tenancy level, it can be changed to compartment level |
 | Allow group App_team to read app-catalog-listing in tenancy | Grant to list OCI marketplace images |
 
+Click on the blue **Create Policy** button again to create some polices for DB_Team in root compartment.
 ![Create Policy](/images/ocilab/4_policies_create_database.PNG)
+* Enter following policy statements for DB_team. 
+
+| **Statement**                                                             | **Explanation** | 
+| ---------------------------------------------------------------------------|----------------- |
+| Allow group DB_Team to manage database-family in tenancy    | Grant to do all things with the DB system resources in tenancy |
+| Allow group DB_Team to manage autonomous-database-family in tenancy | Grant to do all things with Autonomous Database instances in all compartments |
+| Allow group DB_Team to use virtual-network-family in tenancy | Grant to use network resources in tenancy level |
+
+Click on the blue **Create Policy** button again to create some polices for Network_Team in root compartment.
 ![Create Policy](/images/ocilab/4_policies_create_network.PNG)
+* Enter following policy statements for NetworkTeam. 
+
+| **Statement**                                                             | **Explanation** | 
+| --------------------------------------------------------------------------|----------------- |
+| Allow group Network_team to manage virtual-network-family in tenancy | Grant to manage all components in Networking |
+| Allow group Network_team to manage load-balancers in tenancy | Grant to manage all components in Load Balancing. If the group needs to launch instances |
 
 #### Step 5: Create your users and add to existing groups
+So far we have created compartments, groups and written policies for them, now we need to add some users in those groups. 
+
+Click on left top hamburger menu, hover on **Identity**, then select **Users**
+
+![Create User](/images/ocilab/5_users.PNG)
+
+As you can see, there are 2 users by default. Technically they are both admin user accounts for 1 person, but the way we authenticate in two different ways. Federated means, user is authenticated by OracleIdentityCloudService, on the other hand, single sign on is enabled.
+Non-federated means, user will be authenticated by password.
+
+Click on **Create User** button. Let's create 3 different non-federated users for this lab.
+![Create User](/images/ocilab/5_users_create.PNG)
+* I am adding Database user Edgar.Codd, and you can see user details afterward.
+
+![Create User](/images/ocilab/5_users_create_password.PNG)
+If it's non-federated and no email address assigned, you need to create/reset password. 
+
+![Create User](/images/ocilab/5_users_create_password2.PNG)
+*Note this password will be shown only once, keep it safely and pass it on to Edgar.Codd*
+
+I am adding App team user Jacquard.Looms, also don't forget to generate password.
+![Create User](/images/ocilab/5_users_create_app.PNG)
+
+I am adding Network team user Donald.Davies,  also don't forget to generate password.
+![Create User](/images/ocilab/5_users_create_network.PNG)
+
+#### Step 6: Add users to existing groups 
+
+Now let's add newly created users to according groups. Go to **Groups** and choose **App_team** group.
+![Create User](/images/ocilab/6_group_user.PNG)
+
+Click on **Add User to Group** button then choose Application team member from drop-down list.
+![Create User](/images/ocilab/6_group_user_app.PNG)
+
+Click on **Add User to Group** button then choose Database team member from drop-down list.
+![Create User](/images/ocilab/6_group_user_database.PNG)
+
+Click on **Add User to Group** button then choose Networking team member from drop-down list.
+![Create User](/images/ocilab/6_group_user_network.PNG)
+
+Now basic identity management lab is completed. 
+
+*More granular lab is coming soon*
+
+[Back to the Top](#objectives)
