@@ -1,9 +1,10 @@
 ![](/images/oci.jpeg)
 
 - [Go back to main](/README.md)
+
 ## Objectives
 * Understand IAM concepts, 
-  - [What is compartment?](#compartments)
+  - [What is compartment?](#what-is-compartment)
   - [What is group?](#groups)
   - [What is users?](#users)
   - [how do you authorize them using policies?](#real-cool-heading) 
@@ -11,7 +12,6 @@
 - Create your first groups and users
 - Create your policies and attach it to compartment
 
-**Prerequisites for the workshop**
 ## Pre-Requisites: Oracle Cloud Account
 - First of all, you need an Oracle Cloud account. Sign up [here](https://oracle.com/free) to create a free-tier account. 
 - Use your Always Free resources as long as you want with no time constraints—subject only to the capacity limits noted. 
