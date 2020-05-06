@@ -26,6 +26,7 @@ Once you are successfully created your cloud account, you will receive a confirm
   - Tenant, User name and Password
   - URL for the Console: [https://oracle.com](https://oracle.com)
   - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Microsoft Edge.
+
 ### Knowledge Check: IAM understanding
 #### What is compartment?
 
