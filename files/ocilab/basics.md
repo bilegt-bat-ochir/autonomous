@@ -1,6 +1,6 @@
 ![](/images/oci.jpeg)
 
-- [Go back to main](README.md)
+- [Go back to main](bilegt-bat-ochir.github.io)
 
 # Objectives
 * [Understand IAM concepts](#knowledge-check-iam-understanding)
