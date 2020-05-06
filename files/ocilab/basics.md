@@ -1,6 +1,4 @@
-![](/images/oci.jpeg)
-
-- [Go back to main](bilegt-bat-ochir.github.io)
+[Oracle Cloud Infrastructure Learning materials](https://bilegt-bat-ochir.github.io/)
 
 # Objectives
 * [Understand IAM concepts](#knowledge-check-iam-understanding)
