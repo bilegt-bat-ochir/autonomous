@@ -21,7 +21,6 @@ Once you are successfully created your cloud account, you will receive a confirm
 | **CoreLabs**               |  **Data Management Labs**|
 | ------------------------------------------------|------------------------- |
 | [Compartment/Groups/Policies/Users](/files/ocilab/basics.md)   |[Autonomous Database Workshop](/files/lab1/AutonomousWorkshop.md)    |
-| VCN     *Coming soon*    |   |
 
 
 
